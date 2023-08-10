@@ -1,20 +1,21 @@
 import sky from './sky.png';
 export function Floats() {
   return (
-    <><div>
-        <img style={{ float: 'left', height:'100px'}} src={sky} alt="" />
+    <>
+      <div>
+        <img style={{ float: 'left', height: '100px' }} src={sky} alt="" />
         <img style={{ float: 'left' }} src={sky} alt="" />
         <div
-        style={{
-          height: '500px',
-          width: '200px',
-          backgroundColor: 'grey',
-          float: 'right',
-        }}
-      ></div>
-    </div>
-      
-      <p style={{clear:'none'}}>
+          style={{
+            height: '500px',
+            width: '200px',
+            backgroundColor: 'grey',
+            float: 'right',
+          }}
+        ></div>
+      </div>
+
+      <p style={{ clear: 'none' }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -25,7 +26,6 @@ export function Floats() {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-      
     </>
   );
 }

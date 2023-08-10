@@ -7,7 +7,8 @@ export const FAQ = () => {
       <h5>Tutaj znajdziesz odpowiedzi na najczęściej zadawane pytania</h5>
       <details>
         <summary>
-          <span className='ikona'>&lt;</span> <span>Jak mogę zapłacić za szkolenie?</span>
+          <span className="ikona">&lt;</span>{' '}
+          <span>Jak mogę zapłacić za szkolenie?</span>
         </summary>
         <h5>
           {' '}

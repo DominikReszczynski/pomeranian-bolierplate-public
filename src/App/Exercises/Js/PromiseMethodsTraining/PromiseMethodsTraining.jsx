@@ -21,7 +21,7 @@ export function PromiseMethodsTraining() {
         reject(new Error('Błąd pobierania danych'));
       }, 500)
     );
- 
+
   const cb = (log) => {
     if (log.status === 'rejected') {
       console.error(log?.reason?.stack);
@@ -29,11 +29,11 @@ export function PromiseMethodsTraining() {
       console.log(log);
     }
   };
- 
+
   const logger = (log) => console.log(log);
   const logMultiple = (logs) => logs.forEach(cb);
   const errorLogger = (err) => console.error(err);
- 
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
       {/* <button onClick={() => fetchDataFast()}>fetchDataFast</button>
@@ -103,7 +103,7 @@ export function PromiseMethodsTraining() {
       <button
         onClick={() =>
           Promise.race([fetchDataFast(), fetchDataLong()])
-            .then(logger )
+            .then(logger)
             .catch(errorLogger)
         }
       >
@@ -112,7 +112,7 @@ export function PromiseMethodsTraining() {
       <button
         onClick={() =>
           Promise.race([fetchDataFast(), fetchDataLong(), fetchDataError()])
-            .then(logger )
+            .then(logger)
             .catch(errorLogger)
         }
       >

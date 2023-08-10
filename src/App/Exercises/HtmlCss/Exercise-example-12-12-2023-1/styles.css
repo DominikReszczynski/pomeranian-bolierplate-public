@@ -1,6 +1,6 @@
 :root {
-  --main-font-color: #FE5407;
-  --primary: #FE3756;
+  --main-font-color: #fe5407;
+  --primary: #fe3756;
 }
 
 .my-2 {
@@ -33,18 +33,19 @@
   font-weight: bold;
 }
 
-.content-wrapper .first ul{
+.content-wrapper .first ul {
   list-style: inside;
 }
 
-.content-wrapper .first li{
+.content-wrapper .first li {
   list-style-type: square;
 }
 
-.content-wrapper ol, .content-wrapper ul {
+.content-wrapper ol,
+.content-wrapper ul {
   padding-left: 10px;
 }
 
-.content-wrapper li{
+.content-wrapper li {
   margin-bottom: 24px;
 }

@@ -3,10 +3,10 @@
 }
 div.mydiv-1,
 div.mydiv-1 p,
-div.mydiv-2{
-  background-color:gold;
+div.mydiv-2 {
+  background-color: gold;
   padding: 10px;
 }
-div.mydiv-3 ~ span{
-  color:aqua;
+div.mydiv-3 ~ span {
+  color: aqua;
 }

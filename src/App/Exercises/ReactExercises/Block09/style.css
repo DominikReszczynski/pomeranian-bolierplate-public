@@ -1,17 +1,17 @@
 .font-test-family {
   font-family: Chilanka;
 }
-.btn{
-  background: #FE3756;
-  
-  border: 1px solid #FE3756;
+.btn {
+  background: #fe3756;
+
+  border: 1px solid #fe3756;
   border-radius: 8px;
   box-sizing: border-box;
 
   width: 326px;
   height: 56px;
 }
-input{
+input {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,8 +21,8 @@ input{
   width: 160px;
   height: 48px;
 
-  background: #FFFFFF;
+  background: #ffffff;
 
-  border: 1px solid #FE3756;
+  border: 1px solid #fe3756;
   border-radius: 5px;
 }

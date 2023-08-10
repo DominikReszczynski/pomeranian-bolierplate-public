@@ -14,7 +14,7 @@ export function ReactUseRef() {
     scrollToTarget();
   }, []);
   return (
-    <div className='conteiner--react-use-ref'>
+    <div className="conteiner--react-use-ref">
       <label htmlFor="">Input witchout useRef</label>
       <input type="text" />
 
@@ -23,7 +23,7 @@ export function ReactUseRef() {
       <input ref={inputRef} type="text" />
       <p>Jestem przykładowym routem</p>
       {/* -----------------Scroll to specyfic element after render-------------------- */}
-      <div className='conteiner--react-use-ref-scroll-too'>
+      <div className="conteiner--react-use-ref-scroll-too">
         <div ref={targetRef}></div>
       </div>
     </div>

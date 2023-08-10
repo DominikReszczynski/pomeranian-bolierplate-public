@@ -9,7 +9,6 @@ import { TabesExerciseMetaData } from './TabesExercise/router-data';
 import { TablesMetaData } from './Tables/router-data';
 import { TextFundamentsMetaData } from './TextFundaments/router-data';
 
-
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   SelectorsAndCascadeMetaData,

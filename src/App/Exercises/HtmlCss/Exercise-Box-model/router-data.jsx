@@ -1,5 +1,5 @@
 import React from 'react';
-import {ExerciseBoxModel} from "./index"
+import { ExerciseBoxModel } from './index';
 
 export const ExerciseBoxModelMetaData = {
   path: 'Exercise-Box-model',
