@@ -7,10 +7,10 @@ export const Blog = () => {
     <div>
       <h2 className="napisBlog">Blog</h2>
       <div className="div-blog-rev">
-        <p className='data'>
-          <span >30-11-2022</span>
+        <p className="data">
+          <span>30-11-2022</span>
         </p>
-        <Title text="Tytuł A"/>
+        <Title text="Tytuł A" />
         <p>
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
@@ -26,7 +26,9 @@ export const Blog = () => {
       </div>
 
       <div className="div-blog">
-        <p><span>30-11-2022</span></p>
+        <p>
+          <span>30-11-2022</span>
+        </p>
         <Title text="I make mistakes!" />
         <h1>I make mistakes!</h1>
         <p>
@@ -41,11 +43,13 @@ export const Blog = () => {
 
         <h3 className="podpis">Radosław Majdan</h3>
         <p>Senior Marketing Specjalist</p>
-
       </div>
 
       <div className="div-blog">
-        <p> <span> 30-11-2022 </span> </p>
+        <p>
+          {' '}
+          <span> 30-11-2022 </span>{' '}
+        </p>
         <h1>18 Record-Breaking, Controversial, and Weird Facts </h1>
         <p>
           The death of Queen Elizabeth II on September 8 at the age of 96

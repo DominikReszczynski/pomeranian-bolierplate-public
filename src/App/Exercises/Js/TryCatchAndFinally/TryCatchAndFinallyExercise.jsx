@@ -11,7 +11,7 @@ export function ApiCallExercise() {
       try {
         const response = await fetch(`${BASE_API_URL}/posts`);
         if (!response.ok) {
-            throw new Error('Network response was not ok')
+          throw new Error('Network response was not ok');
         }
         const postData = await response.json();
         setPosts(postData);
@@ -25,13 +25,15 @@ export function ApiCallExercise() {
     }
     fetchPosts();
   }, []);
-  return <div className="container--try-catch">
-    {getIsLoading && 'Loading...'}
-    {getError && getError}
-        <ul>
-            {
-                getPosts.map(post => (<li key={post?.id}>`${post?.title}`</li>))
-            }
-            </ul>
-  </div>;
+  return (
+    <div className="container--try-catch">
+      {getIsLoading && 'Loading...'}
+      {getError && getError}
+      <ul>
+        {getPosts.map((post) => (
+          <li key={post?.id}>`${post?.title}`</li>
+        ))}
+      </ul>
+    </div>
+  );
 }

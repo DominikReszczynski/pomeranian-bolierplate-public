@@ -1,4 +1,4 @@
-import { TextFundaments } from "./TextFundaments";
+import { TextFundaments } from './TextFundaments';
 
 export const TextFundamentsMetaData = {
   path: 'text-fundaments',

@@ -1,4 +1,3 @@
-
 import { Table } from './Tables';
 
 export const TablesMetaData = {

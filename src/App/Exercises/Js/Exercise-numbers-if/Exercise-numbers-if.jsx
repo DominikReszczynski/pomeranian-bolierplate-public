@@ -4,7 +4,7 @@ import './style.css';
 import { IfStatements } from './IfStatements';
 import { IfExercise } from './IfExercise.jsx';
 
-export function ExerciseNumbersIf () {
+export function ExerciseNumbersIf() {
   let a = 5;
 
   let b = 5;

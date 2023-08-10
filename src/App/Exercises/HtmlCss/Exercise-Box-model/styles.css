@@ -1,28 +1,28 @@
 :root {
-  --main-font-color: #FE5407;
-  --primary: #FE3756;
+  --main-font-color: #fe5407;
+  --primary: #fe3756;
 }
-.cssboxmodel{
+.cssboxmodel {
   margin-top: 6px;
 }
-.parent-box-model p{
+.parent-box-model p {
   margin: 20px;
   padding: 20px;
-  border:3px solid red; 
-  display: block
+  border: 3px solid red;
+  display: block;
 }
-#id-p{
+#id-p {
   margin: 30px;
   padding: 30px;
-  border: #FE3756 inset;
+  border: #fe3756 inset;
   border-radius: 5px;
 }
-.dispaly-css-test{
+.dispaly-css-test {
   background-color: gold;
   width: 300px;
   height: 300px;
   text-align: center;
-  display:none;
+  display: none;
   margin-top: 30px;
 }
 /*///////////////////////////// Box Sizing vs Border Box ///////////////////////////*/
@@ -42,7 +42,7 @@
 .box-sizing-conteiner{
   margin: 50px;
 }
-/*///////////////////////////// END Box Sizing vs Border Box ///////////////////////////*/
+/*/ //////////////////////////// END Box Sizing vs Border Box ///////////////////////////*/
 
 /*///////////////////////////// Css property overflow ///////////////////////////*/
 .overflow-conteiner{
@@ -58,7 +58,7 @@
   background-color: brown;
   padding: 10px;
 }
-/*///////////////////////////// END Css property overflow ///////////////////////////*/
+/*/ //////////////////////////// END Css property overflow ///////////////////////////*/
 
 /*
 Jednostki długości:

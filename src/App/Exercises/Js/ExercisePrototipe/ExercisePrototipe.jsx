@@ -18,10 +18,11 @@ export function ExercisePrototipe() {
 
   // Creating a new Car instance
   const myCar = new Car('Toyota', 'Camry');
+  const myCarTwo = new Car('Fiat', '50');
 
   // Adding a custom method to the prototype of the Array
   Array.prototype.newArrayMethod = function () {
-    console.log('jestem tutaj');
+    console.log('yes, I.m a New glopbal array method');
   };
 
   // Creating an example array
@@ -34,10 +35,17 @@ export function ExercisePrototipe() {
   exampleArray.newArrayMethod();
 
   return (
-    <div>
-      make: {myCar.getMake()},
-      model: {myCar.getModel()}
-      {exampleArray.newArrayMethod()}
+    <div className="container--js-prototypes">
+      Make: {myCar.getMake()}
+      <br />
+      Model: {myCar.getModel()}
+      <br />
+      Make: {myCarTwo.getMake()}
+      <br />
+      Model: {myCarTwo.getModel()}
+      <br />
+      Array method: {exampleArray.newArryMethod()}
+      <br />
     </div>
   );
 }

@@ -18,11 +18,11 @@
   justify-content: flex-start;
   align-items: center;
 }
-.gameButtonsRows h4, 
+.gameButtonsRows h4,
 .gameButtonsRows button {
   width: 15rem;
 }
-.gameButtonsRows button, 
+.gameButtonsRows button,
 .stopBottom button {
   padding: 1.25rem 2.2rem 1.25rem 2.2rem;
   margin: 1rem;
@@ -40,9 +40,9 @@
   color: white;
   cursor: pointer;
 }
-.gameButtonsRows button:hover:active, 
-.gameButtonsRows button.activeButton, 
-.stopBottom button:hover{
+.gameButtonsRows button:hover:active,
+.gameButtonsRows button.activeButton,
+.stopBottom button:hover {
   background: #fe3756;
   border-color: #fe3756;
 }
@@ -52,7 +52,7 @@
   gap: 5px;
   margin: 0 auto;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   border: 10px solid rgb(78, 37, 12);
   border-radius: 1rem;
   width: 900px;
@@ -60,7 +60,7 @@
   justify-items: center;
   background-color: #29aa1d;
 }
-#gardenSquare{
+#gardenSquare {
   height: 140px;
   width: 140px;
   padding-top: 20px;
@@ -68,14 +68,14 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.timeAndScore{
+.timeAndScore {
   padding: 1.25rem 2.2rem 1.25rem 2.2rem;
   margin: 1rem;
   border-radius: 0.5rem;
-  border-color: #EBEBEB;
+  border-color: #ebebeb;
   border: 1px;
   gap: 1rem;
-  background: #EBEBEB;
+  background: #ebebeb;
   font-family: Poppins;
   font-size: 22px;
   font-weight: 500;
@@ -86,17 +86,17 @@
   width: 15rem;
 }
 .container {
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 1fr 3fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
 }
-.container .item{
+.container .item {
   padding-top: 1rem;
 }
-#gardenSquare #hole{
+#gardenSquare #hole {
   margin-top: 50px;
   height: 50px;
   width: 100%;

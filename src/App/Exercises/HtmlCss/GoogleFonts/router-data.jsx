@@ -5,6 +5,14 @@ export const GoogleFontsMetaData = {
   date: '16-12-2023',
   linkLabel: 'Google Fonts',
   blockNo: 1,
-  element: <><Exercise /><hr/><GoogleFonts/><hr/><Lists/></>,
+  element: (
+    <>
+      <Exercise />
+      <hr />
+      <GoogleFonts />
+      <hr />
+      <Lists />
+    </>
+  ),
   tags: ['components', 'import', 'export'],
 };

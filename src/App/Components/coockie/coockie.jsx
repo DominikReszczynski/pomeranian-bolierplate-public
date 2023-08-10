@@ -9,7 +9,7 @@ const Cookies = () => {
     setIsHidden(true);
     setTimeout(() => {
       setAgree(false);
-    },1000);
+    }, 1000);
   };
   const handleAgreementCustomization = () => {};
 
@@ -33,7 +33,7 @@ const Cookies = () => {
           </div>
           <div className="button-wrapper">
             <button className="agree" onClick={handleAgreement}>
-            ⭐w porządku⭐
+              ⭐w porządku⭐
             </button>
             <button
               className="customize"

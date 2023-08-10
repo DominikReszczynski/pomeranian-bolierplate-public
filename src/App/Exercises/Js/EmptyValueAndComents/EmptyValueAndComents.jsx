@@ -13,7 +13,7 @@ export function EmptyValueAndComents() {
   console.log(name);
 
   // Function returning undefined by default
-  const myFunction = () => { };
+  const myFunction = () => {};
   const surname = myFunction();
   console.log(surname);
 

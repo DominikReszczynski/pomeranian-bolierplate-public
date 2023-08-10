@@ -1,4 +1,4 @@
-import {TryCatchAndFinally} from './TryCatchAndFinally';
+import { TryCatchAndFinally } from './TryCatchAndFinally';
 export const TryCatchAndFinallyMetaData = {
   path: 'try-catch-and-finally',
   date: '19-07-2023',
