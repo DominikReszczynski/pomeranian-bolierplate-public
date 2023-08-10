@@ -22,6 +22,9 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
+  // process.env.REACT_APP_FIREBASE_API_KEY jest zmienną środowiskową znajdującą 
+  // się tylko na moim komputerze (.env.local) znjdować się tam powinny wszystkie
+  // klucze linki zewnętrzen itd. 
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_UTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
@@ -32,6 +35,7 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+// eslint-disable-next-line
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
 // -----------------------------------------------------------------------

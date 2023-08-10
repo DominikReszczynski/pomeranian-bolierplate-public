@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { AppHeader } from './AppHeader';
@@ -14,9 +14,12 @@ function getLayoutClassName(withSidebar) {
 }
 
 export const Layout = ({ withSidebar }) => {
+  const [agree, setAgree] = useState(true);
+  const [agreeForBackground, setAgreeForBackground] = useState(true);
   return (
     <>
-      <Cookies />
+      {agreeForBackground && <div className='block__div'></div>}
+      <Cookies agree={agree} setAgree={setAgree} setAgreeForBackground={setAgreeForBackground} />
       <ErrorBoundary>
         <div className={getLayoutClassName(withSidebar)}>
           <AppHeader />

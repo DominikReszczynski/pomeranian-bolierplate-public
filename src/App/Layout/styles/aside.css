@@ -56,12 +56,10 @@ aside .active {
   margin-top: 10px;
   margin-right: 10px;
   /*tranform obiża ikonę do poziomu tekstu*/
-  transform: translateY(25%);
+  transform: translateY(20%);
 }
 .black {
   color: black;
-}
-.icon2 {
 }
 .asied_row__link__conteiner {
   text-decoration: none;

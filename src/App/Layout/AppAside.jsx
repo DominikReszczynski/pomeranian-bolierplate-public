@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
-import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
@@ -34,7 +33,7 @@ export function AppAside() {
 
             <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="techstack">
-                <img src={techstackIcon} className="icon--techstack" />
+                <img src={techstackIcon} className="icon--techstack" alt='' />
                 <b>Tech Stack</b>
               </NavLink>
             </li>
@@ -54,19 +53,19 @@ export function AppAside() {
 
             <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="hit-the-mole">
-                <img src={hitthemoleIcon} className="icon" />
+                <img src={hitthemoleIcon} className="icon" alt='' />
                 <b>Gra | Kret</b>
               </NavLink>
             </li>
             <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="memo">
-                <img src={memoIcon} className="icon" />
+                <img src={memoIcon} className="icon" alt='' />
                 <b>Gra | Memo</b>
               </NavLink>
             </li>
             <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="form">
-                <img src={formIcon} className="icon" />
+                <img src={formIcon} className="icon" alt='' />
                 <b>Formularz</b>
               </NavLink>
             </li>
@@ -80,7 +79,7 @@ export function AppAside() {
 
             <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="FAQ">
-                <img src={faqIcon} className="icon" />
+                <img src={faqIcon} className="icon" alt='' />
                 <b>FAQ</b>
               </NavLink>
             </li>

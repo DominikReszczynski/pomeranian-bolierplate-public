@@ -1,4 +1,4 @@
-import { Forms2, SubRouteExample } from './Forms2';
+import { Forms2 } from './Forms2';
 
 export const Forms2MetaData = {
   path: 'forms-2',

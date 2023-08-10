@@ -4,7 +4,7 @@ import './styles/header.css';
 import { Logo } from '../Components/Logo/Logo';
 import { Link } from 'react-router-dom';
 import strzalka from '../Images/strzalka.svg';
-import cogwheel from '../Images/setting.svg';
+import { SettingIcon } from '../Components/Icons/SettingIcon';
 import DominikProfile50 from '../Images/DominikProfile50.jpg';
 export function AppHeader() {
   return (
@@ -21,7 +21,7 @@ export function AppHeader() {
             console.log('button');
           }}
         >
-          <img src={cogwheel} alt="" />
+          <SettingIcon alt="settings" />
         </button>
 
         <div className="profile-picture">

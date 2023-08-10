@@ -19,6 +19,7 @@
 .dashboard .windows {
   display: flex;
   flex-flow: row wrap;
+  grid-area: links;
 }
 .dashboard .window-main {
   margin: 2%;
@@ -38,19 +39,17 @@
   border: 2px solid white;
   font-family: 'poppins';
   justify-content: space-evenly;
-}
-.dashboard .windows {
-  grid-area: links;
+  min-width: 300px;
 }
 .dashboard aside .profile-img .img-placeholder {
   border-radius: 50% 50%;
-  border: 2px solid gray;
+  border: 3px solid var(--color-primary-red);
   background-color: #e5e5e5;
   width: 150px;
   height: 150px;
 }
 .dashboard aside .profile-img p {
-  margin-top: -20px;
+  margin-top: 0;
   font-size: 1.2rem;
   color: #adadad;
 }

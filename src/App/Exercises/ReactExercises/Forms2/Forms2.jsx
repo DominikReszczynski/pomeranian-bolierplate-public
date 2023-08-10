@@ -14,6 +14,7 @@ const optionsPayment = [
   { value: 'PayPal', label: 'PayPal' },
   { value: 'przelew', label: 'Przelew Tradycyjny' },
 ];
+// eslint-disable-next-line
 const optionsAdditional = [
   { value: 'enviroment', label: 'Ustawienie środowiska', isCheckd: false },
   { value: 'github', label: "intro do Git Hub'a", isCheckd: false },
