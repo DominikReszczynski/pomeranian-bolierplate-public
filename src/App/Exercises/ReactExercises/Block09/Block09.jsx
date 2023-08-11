@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 export function Block09() {
   return (
-    <div>
+    <div className='block09__div'>
       <h2 className="todo-container__title">
         <Link to="/exercises/react">⯇ Click 5</Link>
       </h2>

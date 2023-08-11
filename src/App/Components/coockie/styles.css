@@ -7,7 +7,7 @@
   position: fixed;
   bottom: 0;
   background: var(--dark-blue);
-  padding: 2em 2em 1em 5em;
+  padding: 2em 2em 1em 2em;
   z-index: 3;
   display: flex;
   flex-flow: row wrap;
@@ -15,13 +15,20 @@
   font-family: 'poppins';
   transition: transform 1s ease;
   width: 100%;
-  height: 250px;
+  min-height: 300px;
+  height: auto;
 }
 .cookies-agreements.hidden {
   transform: translateY(100%);
 }
+@media screen and (min-width: 1555px) {
+  .button-wrapper {
+    margin-top: 50px;
+  }
+}
 .button-wrapper {
-  margin-top: 50px;
+  display: flex;
+  justify-content: right;
 }
 .button-wrapper button {
   padding: 1em 1.5em;

@@ -11,7 +11,7 @@
   width: 326px;
   height: 56px;
 }
-input {
+.block09__div input {
   display: flex;
   flex-direction: row;
   align-items: center;

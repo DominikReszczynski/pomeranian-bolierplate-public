@@ -40,6 +40,7 @@
   font-family: 'poppins';
   justify-content: space-evenly;
   min-width: 300px;
+  background-color: white;
 }
 .dashboard aside .profile-img .img-placeholder {
   border-radius: 50% 50%;
