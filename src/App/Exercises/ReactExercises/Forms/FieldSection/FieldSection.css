@@ -1,4 +1,10 @@
 .field-section__title {
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+.field-section {
+  margin: 40px 0;
+}
+.field-section__children {
+  margin-left: 10px;
 }

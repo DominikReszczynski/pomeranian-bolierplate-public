@@ -65,7 +65,7 @@ export function Forms2() {
                       });
                     }}
                   />
-                  <label htmlFor={payment.value} className="radio-label">
+                  <label htmlFor={payment.value} className="radio-labels">
                     <span className="radio-inner-circle"></span>
                     {payment.label}
                   </label>

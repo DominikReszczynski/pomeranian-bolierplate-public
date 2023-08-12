@@ -106,16 +106,24 @@ export function Forms() {
 
   const [isEmailValid, setIsEmailValid] = useState();
   const [isPhoneValid, setPhoneValid] = useState()
-  const [isCityCodeValid, setCityCodeValid] = useState()
-  const [isCityValid, setCityValid] = useState()
-  const [isStreetValid, setStreetValid] = useState()
+  const [isCityCodeValid, setCityCodeValid] = useState(true)
+  const [isCityValid, setCityValid] = useState(true)
+  const [isStreetValid, setStreetValid] = useState(true)
   const [repeatedPasswordValid, setRepeatedPasswordValid] = useState()
+  const [isStreetNumberExist, setStreetNumberExist] = useState()
   const [loginInUse, setLoginInUse] = useState('')
   const [orderID, setOrderId] = useState('');
 
   const isNameAndSurnameValid = formData.nameAndSurname.length > 0 ? formData.nameAndSurname.trim().includes(' ') : true;
   const isBuildingNUmber = formData.streetNumber.trim().length > 0 ? true : false;
   const isFieldsValid = isEmailValid && isNameAndSurnameValid && isPhoneValid && isCityCodeValid && isCityValid && isStreetValid && isBuildingNUmber && isAllRequiredFieldsFilled;
+
+  const deliveryInputList = [
+    { class: isStreetValid, placeholder: 'Ulica', name: 'street', test: () => setStreetValid(validateWord(formData.street)) },
+    { class: isStreetNumberExist, placeholder: '0a', name: 'streetNumber', test: formData.streetNumber.length > 0 ? () => setStreetNumberExist(true) : () => setStreetNumberExist(false) },
+    { class: isCityCodeValid, placeholder: '00-000', name: 'cityCode', test: () => setCityCodeValid(validateCityCode(formData.cityCode)) },
+    { class: isCityValid, placeholder: 'Miasto', name: 'city', test: formData.city.length > 0 ? () => setCityValid(validateWord(formData.city)) : () => setCityValid(true) },
+  ];
 
   function updateAdditionalOptions(fieldName, newValue) {
     setIsAllRequiredFieldsFilled(true);
@@ -174,6 +182,7 @@ export function Forms() {
   }, [orderID]);
   console.log({ formData });
   console.log('wyświetla się lub nie:', isFieldsValid)
+
   return (
     <>
       <form
@@ -198,7 +207,7 @@ export function Forms() {
               </option>
             ))}
           </select> */}
-            <Select
+            <Select className='form__mainConteiner__select'
               value={productOptions.find(
                 (item) => item.value === formData.product
               )}
@@ -212,7 +221,7 @@ export function Forms() {
             />
           </FieldSection>
           <FieldSection title="Wybierz formę płatności*">
-            <RadioButtons
+            <RadioButtons className="form__mainConteiner__radioButtons"
               name="paymentType"
               options={paymentTypeOptions}
               value={formData.paymentType}
@@ -250,53 +259,25 @@ export function Forms() {
           </FieldSection>
           <FieldSection title="Adres do wysyłki*">
             <div className='delivery'>
-              <div className='delivery__firstLine'>
-                <input
-                  className={isStreetValid === false ? 'input-error' : ''}
-                  placeholder='Ulica'
-                  type="text"
-                  name="street"
-                  value={formData.street}
-                  onChange={updateFormData}
-                  onBlur={() => {
-                    setStreetValid(validateWord(formData.street))
-                  }}
-                />
-                <input
-                  className='delivery__secondLine-number'
-                  placeholder='00a'
-                  type="text"
-                  name="streetNumber"
-                  value={formData.streetNumber}
-                  onChange={updateFormData}
-                />
-              </div>
-              <div className='delivery__secondLine'>
-                <input
-                  className={isCityCodeValid === false ? 'input-error' : ''}
-                  placeholder='00-000'
-                  type="text"
-                  name="cityCode"
-                  value={formData.cityCode}
-                  onChange={updateFormData}
-                  onBlur={() => {
-                    setCityCodeValid(validateCityCode(formData.cityCode))
-                  }}
-                />
-
-                <input
-                  className={isCityValid === false ? 'input-error' : ''}
-                  placeholder='Miasto'
-                  type="text"
-                  name="city"
-                  value={formData.city}
-                  onChange={updateFormData}
-                  onBlur={() => formData.city.length > 0 ? setCityValid(validateWord(formData.city)) : setCityValid(true)
-                  }
-                />
-              </div>
+              {deliveryInputList.map((item) => {
+                return (
+                  <>
+                    <input
+                      key={item.name}
+                      className={item.class === false && formData[item.name].length > 0 ? 'input-error' : ''}
+                      placeholder={item.placeholder}
+                      type="text"
+                      name={item.name}
+                      value={formData[item.name]}
+                      onChange={updateFormData}
+                      onBlur={item.test}
+                    />
+                    {item.name === 'streetNumber' ? <br /> : null}
+                  </>
+                )
+              })}
             </div>
-            {!isCityValid && (
+            {!(isCityValid && isCityCodeValid && isStreetValid) && (formData.street.length > 0 || formData.city.length > 0 || formData.cityCode.length > 0 || formData.streetNumber.length > 0) && (
               <p className="input-field-error-message">
                 Nie poprwane dane!
               </p>
@@ -309,12 +290,12 @@ export function Forms() {
               name="email"
               value={formData.email}
               onChange={updateFormData}
-              className={isEmailValid === false ? 'input-error' : ''}
+              className={isEmailValid === false && formData.email.length > 0 ? 'input-error' : ''}
               onBlur={() => {
                 setIsEmailValid(validateEmail(formData.email));
               }}
             />
-            {isEmailValid === false && (
+            {isEmailValid === false && formData.email.length > 0 && (
               <p className="input-field-error-message">
                 Email jest niepoprawny!
               </p>
@@ -322,7 +303,8 @@ export function Forms() {
           </FieldSection>
           <FieldSection title="Numer Telefonu*">
             <input
-              className={isPhoneValid === false ? 'input-error' : ''}
+              placeholder='000 000 000'
+              className={isPhoneValid === false && formData.phoneNumber.length > 0 ? 'input-error' : ''}
               type="text"
               name="phoneNumber"
               value={formData.phoneNumber}
@@ -331,7 +313,7 @@ export function Forms() {
                 setPhoneValid(validatePhone(formData.phoneNumber))
               }}
             />
-            {isPhoneValid === false && (
+            {isPhoneValid === false && formData.phoneNumber.length > 0 && (
               <p className="input-field-error-message">
                 Telefon jest niepoprawny!
               </p>
@@ -339,9 +321,10 @@ export function Forms() {
           </FieldSection>
           <FieldSection title="Uwagi dodatkowe">
             <textarea
+              placeholder='Dodatkowo proszę o...'
               name="details"
-              cols="40"
-              rows="10"
+              cols="55"
+              rows="12"
               style={{ resize: 'none' }}
               value={formData.details}
               onChange={updateFormData}
@@ -369,6 +352,7 @@ export function Forms() {
           {formData.newAccount && <FieldSection title='Podaj potrzebne dane'>
             <h5>Login</h5>
             <input
+              placeholder='Darek1234'
               className={loginInUse ? 'input-error' : ''}
               type="text"
               name="login"
@@ -385,6 +369,7 @@ export function Forms() {
             }
             <h5>Hasło</h5>
             <input
+              placeholder='Hasło'
               className={loginInUse === null ? 'input-error' : ''}
               type="text"
               name="password"
@@ -393,6 +378,7 @@ export function Forms() {
             />
             <h5>Podaj hasło</h5>
             <input
+              placeholder='Ponów Hasło'
               className={loginInUse === null ? 'input-error' : ''}
               type="text"
               name="repeatedPassword"
@@ -446,19 +432,31 @@ export function Forms() {
           </FieldSection>
         </MainSection>
         {console.log("regulamin", isAllRequiredFieldsFilled)}
-        <button type="submit" disabled={!isFieldsValid}>
-          {isFieldsValid ? 'WYŚLIJ' : "Wypełnij wszystkie pola wymagane!"}
-        </button>
+        <div className="button__box">
+          <button
+            className='big-button'
+            type="submit"
+            disabled={!isFieldsValid}
+          >
+            {isFieldsValid ? 'WYŚLIJ' : "! WYPEŁNIJ WSZYSTKIE WYMAGANE POLA !"}
+          </button>
+        </div>
       </form>
       {
         orderID && (
           <div className="modal-conteiner">
             <div className="modal">
-              zamówienie zostało przyjęte id twojego zamówienia to {orderID}
+              <div className='modal__text__conteiner'>
+                <h2>! ZAMÓWIENIE PRZYJĘTE !</h2>
+                <br />
+                <h4>ID: {orderID}</h4>
+                <br />
+              </div>
               <button
+                className='X__button'
                 onClick={() => {
                   window.location.reload()
-                }}>X</button>
+                }}>ZAMKNIJ</button>
             </div>
           </div>
         )

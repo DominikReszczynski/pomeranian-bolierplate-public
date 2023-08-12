@@ -19,18 +19,18 @@ body {
   flex-direction: column;
 }
 
-.radio-label {
+.radio-labels {
   display: flex;
   align-items: center;
   padding: 0.5em;
   margin-bottom: 0.5em;
-  background-color: #fff;
+  background-color: #f4f5f7;
   border: 1px solid #ccc;
   border-radius: 4px;
   transition: background-color 0.2s, border-color 0.2s;
 }
 
-.radio-label:hover {
+.radio-labels:hover {
   background-color: #e6e6e6;
 }
 
@@ -59,15 +59,15 @@ body {
   position: relative;
 }
 
-.radio-label:hover .radio-inner-circle {
+.radio-labels:hover .radio-inner-circle {
   border-color: #555;
 }
 
-.radio-input:checked + .radio-label .radio-inner-circle {
+.radio-input:checked + .radio-labels .radio-inner-circle {
   border-color: #ff1111;
 }
 
-.radio-input:checked + .radio-label .radio-inner-circle::after {
+.radio-input:checked + .radio-labels .radio-inner-circle::after {
   content: '';
   display: block;
   width: 0.5em;

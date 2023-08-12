@@ -1,5 +1,5 @@
 .radio {
-  margin: 0.5rem;
+  margin: 0.4rem 0;
 }
 .radio input[type='radio'] {
   position: absolute;
@@ -9,10 +9,10 @@
   content: '';
   background: #f4f4f4;
   border-radius: 100%;
-  border: 1px solid #fe3756;
+  border: 1px solid #9ca3af;
   display: inline-block;
-  width: 1.4em;
-  height: 1.4em;
+  width: 1.3em;
+  height: 1.3em;
   position: relative;
   top: -0.2em;
   margin-right: 1em;
@@ -24,6 +24,7 @@
 .radio input[type='radio']:checked + .radio-label:before {
   background-color: #fe3756;
   box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #fe3756;
 }
 .radio input[type='radio']:focus + .radio-label:before {
   outline: none;
