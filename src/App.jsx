@@ -15,6 +15,7 @@ import { FAQ } from './App/FAQ/FAQ';
 import { TechStack } from './App/TechStack';
 import { HitTheMoleGame } from './App/Exercises/Js/HitTheMoleGame/HitTheMoleGame.jsx';
 import { MemoGame } from './App/Exercises/Js/MemoGame/MemoGame.jsx';
+import { Forms } from './App/Exercises/ReactExercises/Forms/Forms.jsx'
 import Confetti from 'react-confetti';
 import SnakeDetectionSound from './SnakeDetectionSound.mp3'
 export function App() {
@@ -72,7 +73,7 @@ export function App() {
           <Route path="techstack/*" element={<TechStack />} />
           <Route path="hit-the-mole/*" element={<HitTheMoleGame />} />
           <Route path="memo/*" element={<MemoGame />} />
-          <Route path="form/*" element={''} />
+          <Route path="form/*" element={<Forms />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
