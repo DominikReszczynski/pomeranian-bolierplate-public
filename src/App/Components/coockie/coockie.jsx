@@ -6,6 +6,7 @@ const Cookies = ({ agree, setAgree, setAgreeForBackground }) => {
   const [isHidden, setIsHidden] = useState(false);
   /*funkcja ustawia 2 wartości po naciśnięciu przycisku agree na cookie wartość isHidden na true oraz agree na false różnica między tymi zdażeniami wynosi 500*/
   const handleAgreement = () => {
+    localStorage.setItem('coockieAgree', 'true')
     setIsHidden(true);
     setAgreeForBackground(false)
     setTimeout(() => {

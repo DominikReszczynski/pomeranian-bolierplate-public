@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { AppHeader } from './AppHeader';
@@ -16,6 +16,13 @@ function getLayoutClassName(withSidebar) {
 export const Layout = ({ withSidebar }) => {
   const [agree, setAgree] = useState(true);
   const [agreeForBackground, setAgreeForBackground] = useState(true);
+  useEffect(() => {
+    if (localStorage.getItem("coockieAgree") !== null && localStorage.getItem("coockieAgree") === 'true') {
+      setAgree(false)
+      setAgreeForBackground(false)
+    }
+  }, [])
+
   return (
     <>
       {agreeForBackground && <div className='block__div'></div>}
