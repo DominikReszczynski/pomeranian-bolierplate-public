@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 
 import { NotFound } from './App/Components/NotFound/NotFound';
@@ -15,7 +15,47 @@ import { FAQ } from './App/FAQ/FAQ';
 import { TechStack } from './App/TechStack';
 import { HitTheMoleGame } from './App/Exercises/Js/HitTheMoleGame/HitTheMoleGame.jsx';
 import { MemoGame } from './App/Exercises/Js/MemoGame/MemoGame.jsx';
+import Confetti from 'react-confetti';
+import SnakeDetectionSound from './SnakeDetectionSound.mp3'
 export function App() {
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+  const audio = new Audio(SnakeDetectionSound)
+  const userInput = []
+
+  const [numberOfConfetti, setNUmberOfConfetti] = useState(500)
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [generateConfetti, setGenrateConfetti] = useState(false)
+
+  const handleKeyPress = (event) => {
+    setShowConfetti(false);
+    userInput.push(event.code);
+    if (userInput.length > konamiCode.length) {
+      userInput.shift();
+    }
+    if (userInput.join('') === konamiCode.join('')) {
+      setShowConfetti(true);
+      setGenrateConfetti(true)
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
+  useEffect(() => {
+    if (showConfetti) {
+      audio.play()
+      setTimeout(() => {
+        setNUmberOfConfetti(0)
+      }, 1000)
+      setTimeout(() => {
+        setShowConfetti(false)
+        setNUmberOfConfetti(500)
+      }, 5000)
+    }
+  }, [showConfetti])
   return (
     <BrowserRouter>
       <Routes>
@@ -36,6 +76,7 @@ export function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+      {showConfetti && <Confetti run={generateConfetti} numberOfPieces={numberOfConfetti} />}
     </BrowserRouter>
   );
 }
