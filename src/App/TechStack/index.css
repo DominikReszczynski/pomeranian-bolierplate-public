@@ -26,6 +26,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 @keyframes transform {
   from {

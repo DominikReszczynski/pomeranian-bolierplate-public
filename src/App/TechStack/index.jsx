@@ -22,6 +22,7 @@ import { Link } from 'react-router-dom';
 import jestIcon from './TechStackIcon/JestIcon.svg';
 import firebaseIcon from './TechStackIcon/FirebaseIcon.svg';
 import reduxIcon from './TechStackIcon/ReduxIcon.svg';
+import nodejsIcon from './TechStackIcon/NodejsIcon-1.svg'
 export const TechStack = () => {
   const [availableTechStackLanguage] = useState([
     {
@@ -51,6 +52,10 @@ export const TechStack = () => {
     {
       image: <img src={cssIcone} alt="css" />,
       text: 'CSS',
+    },
+    {
+      image: <img src={nodejsIcon} alt="css" />,
+      text: 'NODE.JS',
     },
     {
       image: <img src={pythoneIcon} alt="python" />,
