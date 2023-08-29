@@ -20,6 +20,7 @@ import { PromiseMetaData } from './Promise/router-data';
 import { FetchowanieDanychZApiMetaData } from './FetchowanieDanychZApi/router-data';
 import { PromiseMethodsTrainingMetaData } from './PromiseMethodsTraining/router-data';
 import { jsonServerMetaData } from './jsonServer/router-data';
+import { TestingMetaData } from './Testing/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -42,5 +43,6 @@ export const blockRouterMetaData = [
   FetchowanieDanychZApiMetaData,
   PromiseMethodsTrainingMetaData,
   jsonServerMetaData,
+  TestingMetaData
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
