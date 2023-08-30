@@ -8,6 +8,7 @@ import { TodoWithServerMetaData } from './TodoWithServer/router-data';
 import { ReactUseRefMetaData } from './ReactUseRef/router-data';
 import { FormsMetaData } from './Forms/router-data';
 import { Forms2MetaData } from './Forms2/router-data';
+import { TodoListTestMetaData } from './todoTest/router-data';
 
 export const blockRouterMetaData = [
   ReactRouterEventsMetaData,
@@ -18,5 +19,6 @@ export const blockRouterMetaData = [
   ReactUseRefMetaData,
   FormsMetaData,
   Forms2MetaData,
+  TodoListTestMetaData
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
