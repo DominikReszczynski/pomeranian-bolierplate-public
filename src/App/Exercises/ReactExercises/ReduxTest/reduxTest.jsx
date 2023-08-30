@@ -1,6 +1,11 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleProfile } from '../../../Store';
 import './styles.css';
 
-export const CardDetails = ({ profile }) => {
+export const CardDetails = () => {
+  const profile = useSelector((state) => {
+    return state.testSlice.profile
+  })
   return (
     <div>
       CardDetails
@@ -9,12 +14,17 @@ export const CardDetails = ({ profile }) => {
   );
 };
 
-export const Accounts = ({ profile }) => {
+export const Accounts = () => {
+  const profile = useSelector((state) => {
+    return state.testSlice.profile
+  });
+  const dispatch = useDispatch();
+
   return (
     <div>
       Accounts
       <div>Current profile: {profile}</div>
-      <button>Change profile</button>
+      <button onClick={() => dispatch(toggleProfile())}>Change profile</button>
     </div>
   );
 };
