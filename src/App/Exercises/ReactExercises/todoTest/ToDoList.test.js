@@ -19,17 +19,17 @@ describe('getRandomIng', () => {
   });
 });
 
-// describe('ToDoList', () => {
-//   it('has header = todo list', () => {
-//     render(<ToDoList />);
-//     const heading = screen.getByRole('heading', { name: /todo list/i });
-//     // expect(heading).toBeInTheDocument();
-//   });
-// });
 describe('ToDoList', () => {
   it('has header = todo list', () => {
     render(<ToDoList />);
     const heading = screen.getByRole('heading', { name: /todo list/i });
     expect(heading).toBeInTheDocument();
+  });
+});
+describe('ToDoList refresh button', () => {
+  it('refresh button todo list', () => {
+    render(<ToDoList />);
+    const refreshButton = screen.getByRole('button', { name: /refresh/i });
+    expect(refreshButton).toBeInTheDocument();
   });
 });
