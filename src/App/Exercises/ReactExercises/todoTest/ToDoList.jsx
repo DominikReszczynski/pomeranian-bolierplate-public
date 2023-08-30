@@ -80,7 +80,13 @@ export const ToDoList = () => {
   };
 
   useEffect(() => {
-
+    let id;
+    if (message.length > 0) {
+      id = setTimeout(() => {
+        setMessage('');
+      }, TIMEOUT);
+    }
+    return () => clearTimeout(id);
   }, [message]);
 
   const handleAddRandom = async () => {
@@ -90,7 +96,7 @@ export const ToDoList = () => {
       'Content-Type': 'application/json',
     };
     const method = 'POST';
-    const randomValue = getRandomTaskName(getRandomInt);
+    const randomValue = getRandomTaskName();
     const body = JSON.stringify({
       title: randomValue,
       note: randomValue,
@@ -108,7 +114,7 @@ export const ToDoList = () => {
 
   return (
     <section>
-      <h1>Prosta To Do List do nauki Testów</h1>
+      <h1>Prosta Todo List do nauki Testów</h1>
       <div>
         Liczba zadań:
         <span data-testid="number-of-tasks">{getNumberOfTasks(todos)}</span>
