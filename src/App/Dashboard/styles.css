@@ -13,7 +13,10 @@
 .dasboard-head {
   color: #fe3756;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.dasboard-head p {
+  margin-top: 20px;
 }
 
 .dashboard .windows {

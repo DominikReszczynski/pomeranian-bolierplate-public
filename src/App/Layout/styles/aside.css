@@ -75,3 +75,12 @@ aside .active {
   transform: translateY(25%);
   margin-right: 10px;
 }
+.github {
+  transform: scale(0.35);
+  margin: -8px -10px -20px -20px;
+}
+
+.aside-row__link {
+  text-decoration: none;
+  color: black;
+}

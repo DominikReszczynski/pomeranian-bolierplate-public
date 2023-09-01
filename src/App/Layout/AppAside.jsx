@@ -5,12 +5,15 @@ import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
-import { SettingIcon } from '../Components/Icons/SettingIcon';
 import techstackIcon from '../Images/codeIcon.svg';
 import faqIcon from '../Images/faq.svg';
 import hitthemoleIcon from '../Images/HitTheMoleIcon.svg';
 import memoIcon from '../Images/MemoIcon.svg';
 import formIcon from '../Images/FormIcon.svg';
+import codewarsIcon from '../Images/codewarsIcon.svg'
+import githubIcon from '../TechStack/TechStackIcon/GitHubIcon.svg'
+import linkedinIcon from '../Images/linkedinIcon.svg'
+import certyficatsIcon from '../Images/certificateIcon.svg'
 export function AppAside() {
   return (
     <aside>
@@ -35,6 +38,13 @@ export function AppAside() {
               <NavLink className="asied_row__link__conteiner" to="techstack">
                 <img src={techstackIcon} className="icon--techstack" alt='' />
                 <b>Tech Stack</b>
+              </NavLink>
+            </li>
+
+            <li className="aside-row">
+              <NavLink className="asied_row__link__conteiner" to="certyficats">
+                <img src={certyficatsIcon} className="icon" alt='' />
+                <b>Certyfikaty</b>
               </NavLink>
             </li>
             {/* <li className="aside-row">
@@ -89,10 +99,22 @@ export function AppAside() {
           <br />
 
           <li className="aside-row">
-            <NavLink to="Settings" className="asied_row__link__conteiner">
-              <SettingIcon className="icon" />
-              <b>Ustawienia</b>
-            </NavLink>
+            <a href='https://www.codewars.com/users/DominikReszczynski' target="_blank" className='aside-row__link' rel="noreferrer">
+              <img src={codewarsIcon} className="icon" alt="CW" />
+              <b>Codewars</b>
+            </a>
+          </li>
+          <li className="aside-row">
+            <a href='https://github.com/DominikReszczynski' target="_blank" className='aside-row__link' rel="noreferrer">
+              <img src={githubIcon} className="icon github" alt="GH" />
+              <b>GitHub</b>
+            </a>
+          </li>
+          <li className="aside-row">
+            <a href='https://www.linkedin.com/in/dominikreszczynski/' target="_blank" className='aside-row__link' rel="noreferrer">
+              <img src={linkedinIcon} className="icon" alt="LD" />
+              <b>Linkedin</b>
+            </a>
           </li>
         </ul>
       </nav>

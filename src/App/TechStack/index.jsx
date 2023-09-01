@@ -23,6 +23,9 @@ import jestIcon from './TechStackIcon/JestIcon.svg';
 import firebaseIcon from './TechStackIcon/FirebaseIcon.svg';
 import reduxIcon from './TechStackIcon/ReduxIcon.svg';
 import nodejsIcon from './TechStackIcon/NodejsIcon-1.svg'
+import wordpressIcon from './TechStackIcon/wordpressIcon.svg'
+import keystoneJSIcon from './TechStackIcon/keystonejsIcon.svg'
+import ghostIcon from './TechStackIcon/ghostIcon.svg'
 export const TechStack = () => {
   const [availableTechStackLanguage] = useState([
     {
@@ -110,8 +113,22 @@ export const TechStack = () => {
       text: 'Discord',
     },
     {
-      image: <img src={msteamsIcon} alt="" />,
+      image: <img src={msteamsIcon} alt="MsTeams" />,
       text: 'MsTeams',
+    },
+  ]);
+  const [availableTechStackCMS] = useState([
+    {
+      image: <img src={wordpressIcon} alt="wordpress" />,
+      text: 'WordPress',
+    },
+    {
+      image: <img src={ghostIcon} alt="ghost" />,
+      text: 'Ghost',
+    },
+    {
+      image: <img src={keystoneJSIcon} alt="keystoneJS" />,
+      text: 'KeystoneJS',
     },
   ]);
   return (
@@ -137,6 +154,14 @@ export const TechStack = () => {
         <p className="TechStack__title"> IDE </p>
         <div className="TechStack__module">
           {availableTechStackIDE.map((item) => {
+            return <TechStackBlock image={item.image} text={item.text} />;
+          })}
+        </div>
+        <br />
+
+        <p className="TechStack__title"> CMS </p>
+        <div className="TechStack__module">
+          {availableTechStackCMS.map((item) => {
             return <TechStackBlock image={item.image} text={item.text} />;
           })}
         </div>

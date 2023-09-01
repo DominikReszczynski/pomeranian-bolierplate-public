@@ -1,4 +1,4 @@
-details {
+.FaqConteiner details {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -9,14 +9,14 @@ details {
   padding: 18px 24px;
   gap: 18px;
 
-  width: auto;
+  max-width: 800px;
   height: auto;
 
   /* Background/bg-primary */
 
   background: #ffffff;
   /* gray/300 */
-
+  border: 0.5px solid rgb(196, 196, 196);
   border-left: 5px solid #c8cbd1;
   border-radius: 8px;
   list-style: none;
@@ -24,32 +24,34 @@ details {
   -moz-box-shadow: 0px 10px 19px 0px rgba(151, 151, 151, 0.55);
   box-shadow: 0px 10px 19px 0px rgba(151, 151, 151, 0.55);
   margin-top: 2rem;
-
   max-height: 80px;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
-details[open] {
+.FaqConteiner details[open] {
   max-height: 500px;
+  max-width: 800px;
 }
-details summary {
-  list-style-type: none;
-}
-details summary::before {
+
+.FaqConteiner details summary::before {
   content: '';
   vertical-align: middle;
 }
-summary:hover {
+.FaqConteiner summary:hover {
   cursor: pointer;
 }
-span .ikona {
+.FaqConteiner .ikona {
   margin: 0px;
   color: orange;
   font-size: large;
   font-weight: bolder;
 }
-span {
+.FaqConteiner span {
   margin: 0px;
   font-size: large;
   font-weight: bolder;
+}
+.FaqConteiner ul {
+  margin: 10px 0 10px 30px;
+  list-style: '╸';
 }

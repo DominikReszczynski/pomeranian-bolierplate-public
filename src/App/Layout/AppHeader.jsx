@@ -4,7 +4,7 @@ import './styles/header.css';
 import { Logo } from '../Components/Logo/Logo';
 import { Link } from 'react-router-dom';
 import strzalka from '../Images/strzalka.svg';
-import { SettingIcon } from '../Components/Icons/SettingIcon';
+
 import DominikProfile50 from '../Images/DominikProfile50.jpg';
 export function AppHeader() {
   return (
@@ -15,14 +15,6 @@ export function AppHeader() {
         </Link>
       </div>
       <div className="menu">
-        <button
-          className="settings"
-          onClick={() => {
-            console.log('button');
-          }}
-        >
-          <SettingIcon alt="settings" />
-        </button>
 
         <div className="profile-picture">
           <img className="img-placeholder" src={DominikProfile50} alt="" />

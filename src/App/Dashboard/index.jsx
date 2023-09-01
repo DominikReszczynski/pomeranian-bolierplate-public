@@ -45,13 +45,13 @@ export const Dashboard = () => {
     <div className="dashboard">
       <header>
         <div className="dasboard-head">
-          <img src={hand} alt="hand" />
-          <h3 style={{ marginLeft: '10px' }}>Hej, tutaj Dominik!</h3>
+          <h3><img src={hand} alt="hand" />Hej, tutaj Dominik!</h3>
+          <p>
+            Poniżej znajdziesz najważniejsze informacje na temat mojej
+            działalności
+          </p>
         </div>
-        <p>
-          Poniżej znajdziesz najważniejsze informacje na temat mojej
-          działalności
-        </p>
+
       </header>
       <div className="windows">
         {availableCards.map((card) => {
