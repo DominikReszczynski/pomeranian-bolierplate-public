@@ -3,13 +3,13 @@ import hand from '../Images/emogiHand.svg';
 import { useState } from 'react';
 import { DashboardCard } from '../Components/DashboardCard/DashboardCard';
 import exerciseIcone from '../Images/exerciseIcone.svg';
-import BlogIcone from '../Images/blogIcon.svg';
+import BlogIcone from '../Images/blogIcon2.svg';
 import CodeIcone from '../Images/codeIcon.svg';
 import FaqIcon from '../Images/FaqIcon.svg';
 import personalcard from '../Images/personalcard.svg';
 import DominikProfile from '../Images/DominikProfile.jpg';
 export const Dashboard = () => {
-  const [availableCards] = useState([
+  const availableCards = [
     {
       sectionTitle: 'Moje CV',
       icon: <img src={personalcard} alt="business card resume" />,
@@ -40,7 +40,7 @@ export const Dashboard = () => {
       description: 'odpowiedzi na najczęstsze pytania',
       link: '/faq',
     },
-  ]);
+  ];
   return (
     <div className="dashboard">
       <header>

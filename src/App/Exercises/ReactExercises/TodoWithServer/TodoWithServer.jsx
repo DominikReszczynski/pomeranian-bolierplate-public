@@ -44,11 +44,13 @@ export function TodoWithServer() {
   }, []);
   return (
     <div className="todo-container">
+      <h1>To Do List z serwerem lokalnym</h1>
       {error && (<div className='startInfoAboutServer'>
         <h2>! Żeby To Do List działał trzeba najpierw uruchomić server lokalny !</h2>
         <p><strong>lokalizacja: src/server/swager/pomeranian-local-dev-server</strong> w środku przeczytaj README</p>
       </div>)}
       {error && <h3 className='errorInfo'>{error}</h3>}
+
       {isFormVisibility && (
         <TodoForm
           setFormVisibility={setFormVisibility}
@@ -74,16 +76,16 @@ export function TodoWithServer() {
               })}
           </div>
         </>)}
-      {!error && (<button
-        className="big-button"
-        onClick={() => {
-          setFormVisibility(true);
-        }}
-      >
-        DODAJ
-      </button>)}
-
-
+      {!error && (
+        <div className='conteiner__todoBtn'>
+          <button
+            className="todoBtn"
+            onClick={() => {
+              setFormVisibility(true);
+            }}
+          >
+            DODAJ
+          </button></div>)}
     </div>
   );
 }

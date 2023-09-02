@@ -1,8 +1,8 @@
 .edit-icon {
-  stroke: #000000;
+  stroke: #0055ff;
   cursor: pointer;
 }
 .edit-icon:hover {
-  stroke: #06a0f9;
+  stroke: var(--color-primary-red);
   cursor: pointer;
 }

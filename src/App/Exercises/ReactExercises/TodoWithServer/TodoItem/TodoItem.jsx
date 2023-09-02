@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { MarkDoneIcone } from './MarkDoneIcon/MarkDoneIcon.jsx';
 import { EditIcon } from './EditIcon/EditIcon.jsx';
+import { Tooltip } from 'react-tooltip'
 
 export function TodoItem({
   todo,
@@ -51,18 +52,22 @@ export function TodoItem({
         <div className="todo-item__wrapper__text todo-item__wrapper__text--smaller">
           {formatDate(createdAt)}
         </div>
-        <p className="todo-item__wrapper__text">{note}</p>
+        <p className="todo-item__wrapper__note">{note}</p>
       </div>
       <div className="todo-item__actions">
-        {!todo.isDone && (
-          <button
-            className="todo-item__actions__button 
-          todo-item__actions__icon"
-            onClick={() => handleDoneClick()}
-          >
-            <MarkDoneIcone />
-          </button>
+        {isDone && (
+          <div className="todo-item__actions__date">
+            {formatDate(doneDate)}
+          </div>
         )}
+        <button
+          className="todo-item__actions__button 
+          todo-item__actions__icon"
+          onClick={() => handleDoneClick()}
+          disabled={isDone ? true : false}
+        >
+          <MarkDoneIcone isDone={isDone ? true : null} />
+        </button>
         <button
           className="todo-item__actions__button 
           todo-item__actions__icon"
@@ -71,7 +76,7 @@ export function TodoItem({
             setFormVisibility(true);
           }}
         >
-          <EditIcon />
+          <EditIcon className='todo-item__actions__iconEdit' />
         </button>
 
         <button
@@ -87,19 +92,7 @@ export function TodoItem({
           </div>
         )}
 
-        {isDone && (
-          <>
-            <div
-              className="todo-item__actions__icon 
-              todo-item__actions__icon--check-mark"
-            >
-              <MarkDoneIcone isDone={isDone} />
-            </div>
-            <div className="todo-item__actions__date">
-              {formatDate(doneDate)}
-            </div>
-          </>
-        )}
+
       </div>
     </div>
   );

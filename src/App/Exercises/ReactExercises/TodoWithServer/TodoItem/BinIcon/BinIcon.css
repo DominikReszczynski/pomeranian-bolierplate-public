@@ -1,9 +1,9 @@
 .bin-icon {
-  stroke: #000;
+  stroke: #ff6363;
 }
 
 .bin-icon:hover {
-  stroke: #06a0f9;
+  stroke: var(--color-primary-red);
   cursor: pointer;
 }
 

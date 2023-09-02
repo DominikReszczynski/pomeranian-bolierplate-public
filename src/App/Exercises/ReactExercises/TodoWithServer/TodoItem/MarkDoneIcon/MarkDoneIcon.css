@@ -1,12 +1,12 @@
-.mark-icon {
-  stroke: #000;
-}
-
 .mark-icon:hover {
-  stroke: #06a0f9;
+  filter: invert(56%) sepia(90%) saturate(6444%) hue-rotate(333deg)
+    brightness(106%) contrast(99%);
   cursor: pointer;
 }
 
 .mark-icon--done {
-  stroke: #00ff1a;
+  filter: invert(0%) sepia(1%) saturate(2%) hue-rotate(6deg) brightness(95%)
+    contrast(100%);
+  opacity: 0.5;
+  cursor: no-drop;
 }
