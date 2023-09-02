@@ -19,6 +19,7 @@ import { Forms } from './App/Exercises/ReactExercises/Forms/Forms.jsx'
 import Confetti from 'react-confetti';
 import SnakeDetectionSound from './SnakeDetectionSound.mp3'
 import { Certficats } from './App/Certyficats/certyficats';
+import { TodoWithServer } from './App/Exercises/ReactExercises/TodoWithServer/TodoWithServer.jsx';
 export function App() {
   const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
   const audio = new Audio(SnakeDetectionSound)
@@ -66,7 +67,7 @@ export function App() {
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
-          <Route path="cv/*" element={<CV />} />keystonejs
+          <Route path="cv/*" element={<CV />} />
           <Route path="Calendar/*" element={<Calendar />} />
           <Route path="Settings/*" element={<Settings />} />
           <Route path="Blog/*" element={<Blog />} />
@@ -76,6 +77,7 @@ export function App() {
           <Route path='certyficats/*' element={<Certficats />} />
           <Route path="memo/*" element={<MemoGame />} />
           <Route path="form/*" element={<Forms />} />
+          <Route path="todoList/*" element={<TodoWithServer />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

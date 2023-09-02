@@ -4,7 +4,7 @@ import './styles/aside.css';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
-import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import blogIcon from '../Images/blogIcon.svg';
 import techstackIcon from '../Images/codeIcon.svg';
 import faqIcon from '../Images/faq.svg';
 import hitthemoleIcon from '../Images/HitTheMoleIcon.svg';
@@ -14,6 +14,7 @@ import codewarsIcon from '../Images/codewarsIcon.svg'
 import githubIcon from '../TechStack/TechStackIcon/GitHubIcon.svg'
 import linkedinIcon from '../Images/linkedinIcon.svg'
 import certyficatsIcon from '../Images/certificateIcon.svg'
+import todoIcon from '../Images/list-checkIcon.svg'
 export function AppAside() {
   return (
     <aside>
@@ -62,17 +63,12 @@ export function AppAside() {
             </li>
 
             <li className="aside-row">
-              <NavLink className="asied_row__link__conteiner" to="hit-the-mole">
-                <img src={hitthemoleIcon} className="icon" alt='' />
-                <b>Gra | Kret</b>
+              <NavLink className="asied_row__link__conteiner" to="todoList">
+                <img src={todoIcon} className="icon" alt='' />
+                <b>To Do List</b>
               </NavLink>
             </li>
-            <li className="aside-row">
-              <NavLink className="asied_row__link__conteiner" to="memo">
-                <img src={memoIcon} className="icon" alt='' />
-                <b>Gra | Memo</b>
-              </NavLink>
-            </li>
+
             <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="form">
                 <img src={formIcon} className="icon" alt='' />
@@ -81,8 +77,23 @@ export function AppAside() {
             </li>
 
             <li className="aside-row">
+              <NavLink className="asied_row__link__conteiner" to="hit-the-mole">
+                <img src={hitthemoleIcon} className="icon" alt='' />
+                <b>Gra | Kret</b>
+              </NavLink>
+            </li>
+
+            <li className="aside-row">
+              <NavLink className="asied_row__link__conteiner" to="memo">
+                <img src={memoIcon} className="icon" alt='' />
+                <b>Gra | Memo</b>
+              </NavLink>
+            </li>
+
+
+            <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="Blog">
-                <CalendarIcon className="icon" />
+                <img src={blogIcon} alt="blogIcon" className="icon" />
                 <b>Blog</b>
               </NavLink>
             </li>

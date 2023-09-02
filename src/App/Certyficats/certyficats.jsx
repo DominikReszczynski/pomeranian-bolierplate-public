@@ -23,7 +23,7 @@ export const Certficats = () => {
         slidesToScroll: 1,
         lazyLoad: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 5000,
     };
     const certyficats = [
         {
@@ -53,7 +53,7 @@ export const Certficats = () => {
     ]
     return (
         <div>
-            <h1>Moje slajdy</h1>
+            <h1>Moje certyfikaty</h1>
             <div className='center-container'>
                 <div className='slider'>
                     <Slider {...settings}>

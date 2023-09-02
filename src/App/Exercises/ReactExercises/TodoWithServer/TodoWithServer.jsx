@@ -44,11 +44,11 @@ export function TodoWithServer() {
   }, []);
   return (
     <div className="todo-container">
-      <div>
-        <h2>!Żeby To Do List poprawnie działał trzeba najpierw uruchomić server lokalny!</h2>
+      {error && (<div className='startInfoAboutServer'>
+        <h2>! Żeby To Do List działał trzeba najpierw uruchomić server lokalny !</h2>
         <p><strong>lokalizacja: src/server/swager/pomeranian-local-dev-server</strong> w środku przeczytaj README</p>
-      </div>
-      {error && <p>{error}</p>}
+      </div>)}
+      {error && <h3 className='errorInfo'>{error}</h3>}
       {isFormVisibility && (
         <TodoForm
           setFormVisibility={setFormVisibility}
@@ -73,29 +73,17 @@ export function TodoWithServer() {
                 );
               })}
           </div>
+        </>)}
+      {!error && (<button
+        className="big-button"
+        onClick={() => {
+          setFormVisibility(true);
+        }}
+      >
+        DODAJ
+      </button>)}
 
-          <button
-            className="big-button"
-            onClick={() => {
-              setFormVisibility(true);
-            }}
-          >
-            DODAJ
-          </button>
-        </>
-      )}
+
     </div>
   );
 }
-
-/**
- * DODAWANIE TODOSA:
- * button "DODAJ"
- * widok formularza dodawania z dwoma inputami i przyciskiem "ZAPISZ" i "COFNIJ"
- * obsługa widoku (przełączanie widoku)
- * request do API dodający nowe todo
- * jezeli request się powiedzie to:
- *    informujemy o powodzeniu,
- *    czyscimy formularz
- * po kliku "COFNIJ" odswiezamy listę
- */
