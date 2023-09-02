@@ -4,9 +4,14 @@ import './styles.css';
 
 export const GoBackLink = ({ label }) => {
   return (
-    <Link to=".." relative="path">
-      {label || 'Cofnij'}
-    </Link>
+    <div className='goBackConteiner'>
+      <Link to=".." relative="path">
+        <div className='goBackLink'>
+          {label || 'Cofnij'}
+        </div>
+      </Link>
+    </div>
+
   );
 };
 

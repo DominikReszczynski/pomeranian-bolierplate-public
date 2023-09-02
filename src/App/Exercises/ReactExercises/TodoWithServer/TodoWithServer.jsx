@@ -44,9 +44,10 @@ export function TodoWithServer() {
   }, []);
   return (
     <div className="todo-container">
-      <h2 className="todo-container__title">
-        <Link to="/exercises/react">⯇ Todo List</Link>
-      </h2>
+      <div>
+        <h2>!Żeby To Do List poprawnie działał trzeba najpierw uruchomić server lokalny!</h2>
+        <p><strong>lokalizacja: src/server/swager/pomeranian-local-dev-server</strong> w środku przeczytaj README</p>
+      </div>
       {error && <p>{error}</p>}
       {isFormVisibility && (
         <TodoForm

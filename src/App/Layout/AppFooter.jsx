@@ -7,15 +7,14 @@ export function AppFooter() {
   return (
     <footer>
       <div>
-        Projekt uzyskał dofinansowanie ze środków Unii Europejskiej z
-        Europejskiego Funduszu Rozwoju
+        Cieszę się że odwiedziłeś stronę mojego projektu 😃
       </div>
       <a
         style={{ marginRight: '5px' }}
         href={`mailto:${email}`}
       >{`${email}`}</a>
       <div>
-        Regionalnego w ramach projektu grantowego „Invest in Pomerania 2020”.
+        Znajdziesz tutaj rzeczy których nauczyłem się na kursie Pomeranian Start It lub sam we własnym zakresie 😊
       </div>
       <a href={`tel:${phone}`}>{`${phone}`}</a>
     </footer>

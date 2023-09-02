@@ -4,10 +4,13 @@ import './header.css';
 
 export function ExerciseItemHeader({ data }) {
   return (
-    <div className="exercise-item-header">
-      <p>{`Tytuł: ${data?.linkLabel || '-'}`}</p>
-      <p>{`Data: ${data?.date || '-'}`}</p>
-      <GoBackLink />
-    </div>
+    <>
+      <div className="exercise-item-header">
+        <h3>{`Tytuł: ${data?.linkLabel || '-'}`}</h3>
+        <h3>{`Data: ${data?.date || '-'}`}</h3>
+        <GoBackLink />
+      </div>
+      <br />
+    </>
   );
 }

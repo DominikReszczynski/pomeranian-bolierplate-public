@@ -1,0 +1,26 @@
+.exerciseBlock__li {
+  margin: 20px 0;
+  border: 3px solid;
+  border-radius: 10px;
+  width: 400px;
+  height: 74px;
+  text-decoration: none;
+}
+.exerciseBlock__li:hover {
+  color: red;
+}
+.exerciseBlock__li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.exerciseBlock__li img {
+  width: 70px;
+  max-height: 70px;
+  transform: scale(0.5);
+}
+.exerciseBlock__li p {
+  margin-top: 20px;
+}

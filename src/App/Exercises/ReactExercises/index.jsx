@@ -17,11 +17,7 @@ export function ReactExercises() {
 
   return (
     <div>
-      <p>React - lista ćwiczeń</p>
-      <GoBackLink label="Zamknij" />
-
-      <hr />
-
+      <h2>React - lista ćwiczeń</h2>
       <Routes>
         <Route path="" element={<ExerciseLinks />} />
       </Routes>
@@ -47,9 +43,8 @@ export function ReactExercisesItem() {
   return (
     <div className="exercise-item-layout">
       <ExerciseItemHeader data={exerciseRouteData} />
-
       <hr />
-
+      <br />
       <div className="exercise-item-content">{element}</div>
     </div>
   );

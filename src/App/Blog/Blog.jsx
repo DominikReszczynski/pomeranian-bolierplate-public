@@ -30,7 +30,6 @@ export const Blog = () => {
           <span>30-11-2022</span>
         </p>
         <Title text="I make mistakes!" />
-        <h1>I make mistakes!</h1>
         <p>
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
           out of control and at times hard to handle. But if you can’t handle me

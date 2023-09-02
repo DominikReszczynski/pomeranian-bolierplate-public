@@ -17,11 +17,7 @@ export function HtmlCssExercises() {
 
   return (
     <div>
-      <p>HTML & CSS - lista ćwiczeń</p>
-      <GoBackLink label="Zamknij" />
-
-      <hr />
-
+      <h2>HTML & CSS - lista ćwiczeń</h2>
       <Routes>
         <Route path="" element={<ExerciseLinks />} />
       </Routes>
@@ -47,9 +43,8 @@ export function HtmlCssExerciseItem() {
   return (
     <div className="exercise-item-layout">
       <ExerciseItemHeader data={exerciseRouteData} />
-
       <hr />
-
+      <br />
       <div className="exercise-item-content">{element}</div>
     </div>
   );

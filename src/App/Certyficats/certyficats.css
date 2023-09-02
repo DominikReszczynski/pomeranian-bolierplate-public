@@ -1,0 +1,20 @@
+.center-container {
+  display: flex;
+  justify-content: center; /* Wyśrodkuj poziomo */
+  align-items: center; /* Wyśrodkuj wertykalnie */
+  height: 25vh; /* Ustaw wysokość na całą dostępną wysokość ekranu */
+}
+
+.slider {
+  margin: 0 auto; /* Wyśrodkuj za pomocą marginesu poziomego */
+}
+
+.slide h2 {
+  text-align: center;
+  background-color: white;
+}
+.slide__certyficat {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
