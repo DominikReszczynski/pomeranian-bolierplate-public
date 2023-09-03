@@ -26,9 +26,6 @@ export function ReactRouterEvents() {
 
   return (
     <>
-      <h2 className="todo-container__title">
-        <Link to="/exercises/react">⯇ React Router Events</Link>
-      </h2>
       <div className="form--container">
         <h1>Cześć!</h1>
 

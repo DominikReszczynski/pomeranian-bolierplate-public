@@ -22,37 +22,37 @@
   width: 300px;
   height: 300px;
   text-align: center;
-  display: none;
-  margin-top: 30px;
+  margin: 30px 0;
 }
+
 /*///////////////////////////// Box Sizing vs Border Box ///////////////////////////*/
-.box-sizing-conteiner .content-box-example{
+.box-sizing-conteiner .content-box-example {
   width: 200px;
   padding: 20px;
   border: 2px solid yellow;
   box-sizing: content-box;
 }
-.box-sizing-conteiner .border-box-example{
+.box-sizing-conteiner .border-box-example {
   margin-top: 20px;
   width: 200px;
   padding: 20px;
   border: 2px solid pink;
   box-sizing: border-box;
 }
-.box-sizing-conteiner{
+.box-sizing-conteiner {
   margin: 50px;
 }
 /*/ //////////////////////////// END Box Sizing vs Border Box ///////////////////////////*/
 
 /*///////////////////////////// Css property overflow ///////////////////////////*/
-.overflow-conteiner{
+.overflow-conteiner {
   width: 200px;
   height: 100px;
   border: 1px solid black;
   overflow: auto;
   margin: 2rem;
 }
-.overflow-content{
+.overflow-content {
   width: 300px;
   height: 150px;
   background-color: brown;
@@ -81,3 +81,6 @@ Jednostki kolorów:
   rgb (czerwony, zielony, niebieski): na przykład rgb(255, 0, 0) oznacza czerwony.
   hex: na przykład #FF0000 oznacza czerwony.
 */
+.h1InBoxModel {
+  margin-top: 20px;
+}

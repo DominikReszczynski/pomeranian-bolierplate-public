@@ -17,7 +17,7 @@ import './styles.css';
 export const Exercise2 = () => <p className="font-test-family red-font">Hello Dominik</p>*/
 export const Exercise = () => {
   return (
-    <main>
+    <>
       <div className="content-wrapper first">
         <b>
           Lorem ipsum dolor sit amet, consecteturadipiscing elit. Mauris enim
@@ -111,6 +111,6 @@ export const Exercise = () => {
           </li>
         </ol>
       </div>
-    </main>
+    </ >
   );
 };

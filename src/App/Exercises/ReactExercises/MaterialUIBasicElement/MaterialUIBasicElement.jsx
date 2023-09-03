@@ -22,9 +22,6 @@ export function MaterialUIBasicElement() {
   };
   return (
     <>
-      <h2 className="todo-container__title">
-        <Link to="/exercises/react">⯇ MUI</Link>
-      </h2>
       <Tooltip title="zarejestruj się">
         <Button style={{ marginBottom: '20px' }} variant="contained">
           {use}

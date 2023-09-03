@@ -24,6 +24,7 @@ export function ReactUseRef() {
       <p>Jestem przykładowym routem</p>
       {/* -----------------Scroll to specyfic element after render-------------------- */}
       <div className="conteiner--react-use-ref-scroll-too">
+        <p>automatycznie przesuniąeto na dół strony do czerwonego bloku</p>
         <div ref={targetRef}></div>
       </div>
     </div>

@@ -5,30 +5,6 @@ import { Link } from 'react-router-dom';
 export function FloatDesigne() {
   return (
     <>
-      <div>
-        <h3>
-          <Link className="float-links" to="/Blog">
-            {' '}
-            BLOG
-          </Link>
-          <Link
-            className="float-links"
-            style={{ marginLeft: '10px' }}
-            to="/exercises"
-          >
-            {' '}
-            EXERCISE
-          </Link>
-        </h3>
-        <p style={{ fontSize: '22px' }}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <p style={{ marginLeft: '40px', fontSize: '22px' }}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-      </div>
       <div className="blog-div">
         <div id="first">
           <p>

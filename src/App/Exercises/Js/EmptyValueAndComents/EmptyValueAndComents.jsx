@@ -13,7 +13,7 @@ export function EmptyValueAndComents() {
   console.log(name);
 
   // Function returning undefined by default
-  const myFunction = () => {};
+  const myFunction = () => { };
   const surname = myFunction();
   console.log(surname);
 
@@ -53,9 +53,7 @@ export function EmptyValueAndComents() {
   });
   return (
     <div>
-      <h2 className="todo-container__title">
-        <Link to="/exercises/js">⯇ Empty Value And Coments</Link>
-      </h2>
+      <h2>W tym ćwiczeniu cenniejszy jest kod niż strona 🙂</h2>
       <p className="accBalance-paragrpah">
         {accBalance({ amount: 24, currency: 'USD' })}
       </p>

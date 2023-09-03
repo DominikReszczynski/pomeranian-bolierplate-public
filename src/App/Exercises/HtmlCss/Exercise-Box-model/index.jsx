@@ -14,7 +14,8 @@ export const ExerciseBoxModel = () => {
       <a href="?">kotwica</a>
       <input type="text" />
       <img src="" alt="" />
-      <h1>ddhjfcjhngtfhjjh</h1>
+
+      <h1 className='h1InBoxModel'>Buttons</h1>
       <button>button</button>
       <div className="dispaly-css-test">Lorem ipsum 1</div>
       <div className="dispaly-css-test">Lorem ipsum 2</div>

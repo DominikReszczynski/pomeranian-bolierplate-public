@@ -31,9 +31,6 @@ export function Swagerr() {
   };
   return (
     <div>
-      <h2 className="todo-container__title">
-        <Link to="/exercises/react">⯇ Swager</Link>
-      </h2>
       <button onClick={handleFetchTodoData}>pobierz todos</button>
       {getError && <p>{getError}</p>}
       {getTodoList.length > 0 && (

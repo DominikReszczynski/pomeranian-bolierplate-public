@@ -10,6 +10,7 @@ import { FormsMetaData } from './Forms/router-data';
 import { Forms2MetaData } from './Forms2/router-data';
 import { TodoListTestMetaData } from './todoTest/router-data';
 import { ReduxTestMetaData } from './ReduxTest/router-data';
+import { CatApiMetaData } from './CatApi/router-data';
 
 export const blockRouterMetaData = [
   ReactRouterEventsMetaData,
@@ -21,6 +22,7 @@ export const blockRouterMetaData = [
   FormsMetaData,
   Forms2MetaData,
   TodoListTestMetaData,
-  ReduxTestMetaData
+  ReduxTestMetaData,
+  CatApiMetaData
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

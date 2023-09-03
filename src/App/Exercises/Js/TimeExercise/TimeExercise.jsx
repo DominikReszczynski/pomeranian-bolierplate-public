@@ -43,6 +43,14 @@ export const TimeExercise = () => {
     setIsWorking(true);
   }
 
+  const resetWatch = () => {
+    setDeltaTime(0)
+    setMinutes(0);
+
+    setSeconds(0);
+
+    setMsSeconds(0);
+  }
   useEffect(() => {
     let intervalId;
 
@@ -74,6 +82,7 @@ export const TimeExercise = () => {
       <div>
         {isWorking && <button onClick={() => stopWatch()}>Stop</button>}
         {!isWorking && <button onClick={() => startWatch()}>Start</button>}
+        {!isWorking && <button onClick={() => resetWatch()}>Reset</button>}
         {minutes.toString().padStart(2, 0)}:{seconds.toString().padStart(2, 0)}:
         {msSeconds}
       </div>
