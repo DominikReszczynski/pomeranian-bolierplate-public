@@ -1,4 +1,4 @@
-header {
+.header__header {
   grid-area: header;
   position: relative;
   z-index: 1;
@@ -10,11 +10,11 @@ header {
   box-shadow: 0px 1px 9px 0px var(--color-grey);
 }
 
-header > a:first-of-type {
+.header__header > a:first-of-type {
   text-decoration: none;
 }
 
-header.user {
+.header__header .user {
   color: var(--color-grey);
   font-weight: normal;
   display: flex;
@@ -22,7 +22,7 @@ header.user {
   align-items: center;
 }
 
-header .logo {
+.header__header .logo {
   height: auto;
   pointer-events: none;
 }
@@ -35,7 +35,7 @@ header .logo {
   background-color: transparent;
   border-color: transparent;
 }
-header .menu {
+.header__header .menu {
   display: flex;
   justify-content: space-around;
   width: 300px;

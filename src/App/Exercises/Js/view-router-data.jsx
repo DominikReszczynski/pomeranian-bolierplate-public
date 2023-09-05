@@ -21,6 +21,7 @@ import { FetchowanieDanychZApiMetaData } from './FetchowanieDanychZApi/router-da
 import { PromiseMethodsTrainingMetaData } from './PromiseMethodsTraining/router-data';
 import { jsonServerMetaData } from './jsonServer/router-data';
 import { TestingMetaData } from './Testing/router-data';
+import { HitTheMole2MetaData } from './hitTheMoleGame2/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -43,6 +44,7 @@ export const blockRouterMetaData = [
   FetchowanieDanychZApiMetaData,
   PromiseMethodsTrainingMetaData,
   jsonServerMetaData,
-  TestingMetaData
+  TestingMetaData,
+  HitTheMole2MetaData
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

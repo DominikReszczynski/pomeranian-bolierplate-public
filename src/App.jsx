@@ -13,7 +13,7 @@ import { Settings } from './App/Components/Settings/Settings';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ/FAQ';
 import { TechStack } from './App/TechStack';
-import { HitTheMoleGame } from './App/Exercises/Js/HitTheMoleGame/HitTheMoleGame.jsx';
+import { HitTheMoleGame } from './App/Exercises/Js/hitTheMoleGame2/hitTheMoleGame.jsx';
 import { MemoGame } from './App/Exercises/Js/MemoGame/MemoGame.jsx';
 import { Forms } from './App/Exercises/ReactExercises/Forms/Forms.jsx'
 import Confetti from 'react-confetti';

@@ -8,7 +8,7 @@ import strzalka from '../Images/strzalka.svg';
 import DominikProfile50 from '../Images/DominikProfile50.jpg';
 export function AppHeader() {
   return (
-    <header>
+    <header className='header__header'>
       <div>
         <Link to="/">
           <Logo />
