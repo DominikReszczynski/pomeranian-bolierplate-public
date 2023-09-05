@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleProfile } from '../../../Store';
+import { toggleProfile } from '../../../Store/testSlice';
 import './styles.css';
 
 export const CardDetails = () => {

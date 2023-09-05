@@ -11,6 +11,7 @@ import css2Cert from './certyficatsImg/(ENG)_UC-4cfc31cf-27f3-432d-8979-6b7d3d7b
 import css3Cert from './certyficatsImg/(ENG)UC-24f75423-219e-4a71-8ab0-7bdbccb74ede (1).jpg';
 import cmsCert from './certyficatsImg/cms.jpg';
 import bashCert from './certyficatsImg/(ENG)_UC-41958d0b-9417-417a-a5be-b5eccd7bfa56.jpg';
+import javaCours from './certyficatsImg/(ENG)UC-dfbd8276-e02c-4c56-9b64-7cb0c4a672ef.jpg'
 
 export const Certficats = () => {
     const settings = {
@@ -49,7 +50,12 @@ export const Certficats = () => {
         {
             name: 'Bash & Linux: command line for beginners',
             image: bashCert
+        },
+        {
+            name: 'Java from Basics to Expert - create your own applications',
+            image: javaCours
         }
+
     ]
     return (
         <div>

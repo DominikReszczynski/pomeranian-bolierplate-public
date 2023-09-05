@@ -1,26 +1,10 @@
-import { configureStore, createSlice } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
+import { counterSlice } from './counterSlice';
+import { testSlice } from './testSlice';
 
-//redux inicialization
-
-const testSlice = createSlice({
-  name: 'store-test',
-  initialState: {
-    profile: 'retail',
-  },
-  reducers: {
-    toggleProfile: (sliceState) => {
-      if (sliceState.profile === 'retail') {
-        sliceState.profile = 'buisness';
-      } else {
-        sliceState.profile = 'retail';
-      }
-    },
-  },
-});
-
-export const { toggleProfile } = testSlice.actions;
 export const store = configureStore({
   reducer: {
     testSlice: testSlice.reducer,
+    counterSlice: counterSlice.reducer,
   },
 });
