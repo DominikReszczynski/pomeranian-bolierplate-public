@@ -1,28 +1,41 @@
-.exercises-categories {
-  width: 400px;
-}
-.exercises-categories a {
+.exercises-module a {
   margin: 5px;
   text-decoration: none;
 }
-.exercises-categories__ls {
+.exercises-module__categories {
+  width: 400px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.exercises-module__ls {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   color: black;
-  width: 300px;
+  width: 120px;
   height: 74px;
   text-align: center;
   border: 3px solid;
   border-radius: 10px;
 }
-.exercises-categories__ls img {
-  width: 70px;
-  max-height: 70px;
-  transform: scale(0.5);
+.exercises-module__ls img {
+  margin: 0 auto;
+  width: 45px;
+  max-height: 35px;
+  /* transform: scale(0.5); */
 }
-.exercises-categories__ls p {
-  margin-top: 20px;
+.exercises-module__ls p {
+  font-size: 0.8rem;
+
+  /* margin-top: 20px; */
 }
-.exercises-categories__ls:hover {
+.exercises-module__ls:hover {
+  color: var(--color-primary-red);
+}
+.exercises-module__ls:active {
+  border-color: var(--color-primary-red);
   color: var(--color-primary-red);
 }

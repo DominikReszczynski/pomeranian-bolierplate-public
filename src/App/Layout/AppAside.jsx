@@ -15,9 +15,9 @@ import githubIcon from '../TechStack/TechStackIcon/GitHubIcon.svg'
 import linkedinIcon from '../Images/linkedinIcon.svg'
 import certyficatsIcon from '../Images/certificateIcon.svg'
 import todoIcon from '../Images/list-checkIcon.svg'
-export function AppAside() {
+export function AppAside({ menuIsVisible }) {
   return (
-    <aside>
+    <aside className={menuIsVisible ? "menu__visible" : ""}>
       <nav>
         <ul>
           <div className="aside-row__conteiner">

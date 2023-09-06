@@ -70,3 +70,23 @@
   color: #fe3756;
   text-decoration: none;
 }
+@media (width < 600px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-columns: 10fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      'header'
+      'links';
+  }
+  .personal-info {
+    display: none;
+    width: 10px;
+  }
+  .windows {
+    display: flex;
+    justify-content: center;
+  }
+}

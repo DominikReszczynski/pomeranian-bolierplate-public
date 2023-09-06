@@ -8,15 +8,18 @@ export function AppFooter() {
     <footer>
       <div>
         Cieszę się że odwiedziłeś stronę mojego projektu 😃
-      </div>
-      <a
-        style={{ marginRight: '5px' }}
-        href={`mailto:${email}`}
-      >{`${email}`}</a>
-      <div>
+
         Znajdziesz tutaj rzeczy których nauczyłem się na kursie Pomeranian Start It lub sam we własnym zakresie 😊
       </div>
-      <a href={`tel:${phone}`}>{`${phone}`}</a>
+      <div className='contacts'>
+        <a
+          style={{ marginRight: '5px' }}
+          href={`mailto:${email}`}
+        >{`${email}`}</a>
+        <br />
+        <a href={`tel:${phone}`}>{`${phone}`}</a>
+      </div>
+
     </footer>
   );
 }

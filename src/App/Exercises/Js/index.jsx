@@ -1,7 +1,5 @@
 import React from 'react';
 import { Route, Routes, useLocation, useRoutes } from 'react-router-dom';
-
-import { GoBackLink } from '../../Components/GoBack/GoBack';
 import { getRouterMetaDataByCurrentPath } from '../../router-data/getRouterMetaDataByCurrentPath';
 
 import { ExerciseItemHeader } from '../ExerciseItemHeader';
@@ -16,7 +14,7 @@ export function JsExercises() {
   const element = useRoutes(jsBlockRouterData);
 
   return (
-    <div>
+    <div className='js-exercise'>
       <h2>JS - lista ćwiczeń</h2>
       <Routes>
         <Route path="" element={<ExerciseLinks />} />

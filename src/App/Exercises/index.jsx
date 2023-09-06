@@ -29,10 +29,12 @@ export function Exercises() {
 function BlockLayout() {
   return (
     <>
-      <h1>Ćwiczenia</h1>
-      <div className="exercise-main-container">
-        <Categories />
-        <Outlet />
+      <div className='exercise-main-module'>
+        <h1>Ćwiczenia</h1>
+        <div className="exercise-main-container">
+          <Categories />
+          <Outlet />
+        </div>
       </div>
     </>
   );

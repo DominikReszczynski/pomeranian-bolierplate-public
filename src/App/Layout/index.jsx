@@ -16,6 +16,7 @@ function getLayoutClassName(withSidebar) {
 export const Layout = ({ withSidebar }) => {
   const [agree, setAgree] = useState(true);
   const [agreeForBackground, setAgreeForBackground] = useState(true);
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
   useEffect(() => {
     if (localStorage.getItem("coockieAgree") !== null && localStorage.getItem("coockieAgree") === 'true') {
       setAgree(false)
@@ -29,8 +30,8 @@ export const Layout = ({ withSidebar }) => {
       <Cookies agree={agree} setAgree={setAgree} setAgreeForBackground={setAgreeForBackground} />
       <ErrorBoundary>
         <div className={getLayoutClassName(withSidebar)}>
-          <AppHeader />
-          {withSidebar && <AppAside />}
+          <AppHeader toggleMenuVis={() => setMenuIsVisible(!menuIsVisible)} />
+          {withSidebar && <AppAside menuIsVisible={menuIsVisible} />}
           <main>
             <Outlet />
           </main>

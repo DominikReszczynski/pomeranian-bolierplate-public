@@ -1,9 +1,13 @@
+.exercise-main-module {
+  text-align: center; /* Wyśrodkowanie treści w poziomie */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Wyśrodkowanie treści w pionie */
+  align-items: center; /* Wyśrodkowanie treści w poziomie */
+}
 .exercise-main-container {
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* 5rem header, 5rem footer 1.5rem padding (both sides) */
-  grid-template-rows: calc(100vh - 5rem - 5rem - 1.5rem - 1.5rem);
+  display: flex;
+  flex-direction: column;
 }
 
 .exercises-categories a.active {

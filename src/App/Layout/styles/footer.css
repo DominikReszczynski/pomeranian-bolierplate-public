@@ -4,7 +4,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr 270px;
   position: relative;
-  padding: 18px;
+  padding: 9px 18px;
+  z-index: 1100;
+
+  overflow-y: auto;
 }
 
 footer > * {
@@ -27,4 +30,19 @@ footer a {
   display: block;
   white-space: nowrap;
   color: #fe3756;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+@media (width < 600px) {
+  footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contacts {
+    margin-top: 10px;
+  }
 }

@@ -67,23 +67,25 @@ export const Dashboard = () => {
           );
         })}
       </div>
-      <aside>
-        <div className="profile-img">
-          <img className="img-placeholder" src={DominikProfile} alt="" />
-          <h2>Dominik Reszczyński</h2>
-          <p>Brzeg</p>
-        </div>
-        <div className="info">
-          <p>e-mail:</p>
-          <p style={{ marginBottom: '30px' }}>
-            <a href="mailto:dominikreszczynski10@gmail.com">
-              dominikreszczynski10@gmail.com
-            </a>
-          </p>
-          <p>telefon:</p>
-          <p>
-            <a href="tel:+48516802283">+48 516 802 283</a>
-          </p>
+      <aside className='personal-info'>
+        <div >
+          <div className="profile-img">
+            <img className="img-placeholder" src={DominikProfile} alt="" />
+            <h2>Dominik Reszczyński</h2>
+            <p>Brzeg</p>
+          </div>
+          <div className="info">
+            <p>e-mail:</p>
+            <p style={{ marginBottom: '30px' }}>
+              <a href="mailto:dominikreszczynski10@gmail.com">
+                dominikreszczynski10@gmail.com
+              </a>
+            </p>
+            <p>telefon:</p>
+            <p>
+              <a href="tel:+48516802283">+48 516 802 283</a>
+            </p>
+          </div>
         </div>
       </aside>
     </div>
