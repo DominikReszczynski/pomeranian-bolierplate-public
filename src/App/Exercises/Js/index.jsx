@@ -15,7 +15,7 @@ export function JsExercises() {
 
   return (
     <div className='js-exercise'>
-      <h2>JS - lista ćwiczeń</h2>
+      <h2 className='exercise-header'>JS - lista ćwiczeń</h2>
       <Routes>
         <Route path="" element={<ExerciseLinks />} />
       </Routes>

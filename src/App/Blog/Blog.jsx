@@ -1,5 +1,4 @@
 import './styles.css';
-import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { Title } from './Title/Title';
 import { Author } from './Author/Author';
 export const Blog = () => {
@@ -49,7 +48,7 @@ export const Blog = () => {
           {' '}
           <span> 30-11-2022 </span>{' '}
         </p>
-        <h1>18 Record-Breaking, Controversial, and Weird Facts </h1>
+        <h1 className='blog-header'>18 Record-Breaking, Controversial, and Weird Facts </h1>
         <p>
           The death of Queen Elizabeth II on September 8 at the age of 96
           represents a monumental shift for the British monarchy and the people

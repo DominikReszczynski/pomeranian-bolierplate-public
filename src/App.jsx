@@ -46,6 +46,7 @@ export function App() {
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (showConfetti) {
@@ -58,6 +59,7 @@ export function App() {
         setNUmberOfConfetti(500)
       }, 5000)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showConfetti])
   return (
     <BrowserRouter>

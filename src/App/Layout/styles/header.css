@@ -13,7 +13,7 @@
 .header__header .menu {
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  max-width: 300px;
 }
 .menuButton {
   display: none;

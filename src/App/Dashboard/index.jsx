@@ -1,6 +1,6 @@
 import './styles.css';
 import hand from '../Images/emogiHand.svg';
-import { useState } from 'react';
+
 import { DashboardCard } from '../Components/DashboardCard/DashboardCard';
 import exerciseIcone from '../Images/exerciseIcone.svg';
 import BlogIcone from '../Images/blogIcon2.svg';

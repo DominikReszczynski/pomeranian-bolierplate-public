@@ -13,9 +13,9 @@ export const Categories = () => {
         <h2>Kategorie</h2>
 
         <div className='exercises-module__categories'>
-          <NavLink to="html-css" ><div className='exercises-module__ls'><img src={htmlIcon} alt="htmlIcon" /><p>HTML & CSS</p></div></NavLink>
-          <NavLink to="js"><div className='exercises-module__ls'><img src={jsIcon} alt="htmlIcon" /><p>JS</p></div></NavLink>
-          <NavLink to="react"><div className='exercises-module__ls'><img src={reactIcon} alt="htmlIcon" /><p>React</p></div></NavLink>
+          <NavLink to="html-css" ><div className='exercises-module__ls'><img src={htmlIcon} alt="htmlIcon" /><span>HTML & CSS</span></div></NavLink>
+          <NavLink to="js"><div className='exercises-module__ls'><img src={jsIcon} alt="htmlIcon" /><span>JS</span></div></NavLink>
+          <NavLink to="react"><div className='exercises-module__ls'><img src={reactIcon} alt="htmlIcon" /><span>React</span></div></NavLink>
         </div>
       </div>
     </>

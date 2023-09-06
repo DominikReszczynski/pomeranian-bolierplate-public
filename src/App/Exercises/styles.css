@@ -5,6 +5,11 @@
   justify-content: center; /* Wyśrodkowanie treści w pionie */
   align-items: center; /* Wyśrodkowanie treści w poziomie */
 }
+@media (width < 450px) {
+  .exercise-main-module {
+    font-size: 0.8rem;
+  }
+}
 .exercise-main-container {
   display: flex;
   flex-direction: column;
@@ -14,3 +19,8 @@
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
+
+/* @media() {
+  .exercise-header {
+  }
+} */

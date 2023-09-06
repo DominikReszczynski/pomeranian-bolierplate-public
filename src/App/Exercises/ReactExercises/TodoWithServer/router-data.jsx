@@ -6,5 +6,5 @@ export const TodoWithServerMetaData = {
   linkLabel: 'To do Witch Server',
   blockNo: 1,
   element: <TodoWithServer />,
-  tags: ['todo', 'fetch', 'rest', 'api', 'javascript'],
+  tags: ['todo', 'fetch', 'rest', 'api', 'javascript', 'todo', 'fetch', 'rest', 'api', 'javascript'],
 };
