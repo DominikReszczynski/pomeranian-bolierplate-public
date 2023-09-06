@@ -5,7 +5,7 @@ footer {
   grid-template-columns: 1fr 270px;
   position: relative;
   padding: 9px 18px;
-  z-index: 1100;
+  z-index: 3;
   overflow-y: auto;
 }
 
