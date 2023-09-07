@@ -6,9 +6,9 @@ import './index.css';
 import { App } from './App';
 import { worker } from './App/Mocks/setupWorker';
 
-if (process.env.NODE_ENV === 'development') {
-  worker.start({});
-}
+// if (process.env.NODE_ENV === 'development') {
+worker.start({});
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
