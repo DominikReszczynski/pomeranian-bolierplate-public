@@ -19,3 +19,13 @@
 .TechStackBlock__image {
   margin-top: 15px;
 }
+@media (width < 650px) {
+  .TechStackBlock {
+    width: 150px;
+    height: 120px;
+    margin: 10px 10px;
+  }
+  .TechStackBlock__text {
+    font-size: 0.9rem;
+  }
+}

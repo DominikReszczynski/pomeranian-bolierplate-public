@@ -5,7 +5,7 @@ footer {
   grid-template-columns: 1fr 270px;
   position: relative;
   padding: 9px 18px;
-  z-index: 3;
+  z-index: 1200;
   overflow-y: auto;
 }
 
@@ -42,7 +42,17 @@ footer a {
     text-align: center;
     padding: 2px 8px;
   }
+  footer div {
+    font-size: 0.7rem;
+  }
   .contacts {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px 0;
+  }
+  footer a {
+    text-align: center;
+    color: #fe3756;
   }
 }

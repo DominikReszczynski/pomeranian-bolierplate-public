@@ -15,6 +15,7 @@ export const MemoGameBoard2 = ({
 
   useEffect(() => {
     generateMemoArray();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [boardSize]);
 
   const generateMemoArray = () => {
@@ -85,6 +86,7 @@ export const MemoGameBoard2 = ({
     }
 
     return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [firstClickedCard, secondClickedCard]);
 
   useEffect(() => {
@@ -101,20 +103,9 @@ export const MemoGameBoard2 = ({
     <>
       <div className="container">
         <h2 className="item">CZAS GRY: </h2>
-        <h2 className="timeAndScore">{formatTime(gameTime)}</h2>
+        <h2 className="timeAndScoreMemo">{formatTime(gameTime)}</h2>
         <h2 className="item">LICZBA RUCHÓW:</h2>
-        <h2 className="timeAndScore">{score}</h2>
-        <h2 className="item">PRZYCISKI STERUJĄCE</h2>
-        <div className="stopBottom">
-          <button
-            onClick={() => {
-              setGameStart(false);
-              setFinalSettings(boardSize);
-            }}
-          >
-            STOP
-          </button>
-        </div>
+        <h2 className="timeAndScoreMemo">{score}</h2>
       </div>
       <div className="memoGame">
         {memoArray.map((card) => (
@@ -125,6 +116,14 @@ export const MemoGameBoard2 = ({
           </div>
         ))}
       </div>
+      <button className="stopBottom"
+        onClick={() => {
+          setGameStart(false);
+          setFinalSettings(boardSize);
+        }}
+      >
+        STOP
+      </button>
     </>
   );
 };

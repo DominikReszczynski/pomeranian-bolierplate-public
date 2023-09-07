@@ -1,69 +1,21 @@
-.gameOptionsButtons {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  grid-template-rows: auto 3fr;
-  grid-template-columns: 2fr 4fr;
-}
-
-.gameButtonsRows {
-  grid-area: 1 / 1 / 5 / 5;
-}
-
-.gameButtonsRows div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.gameButtonsRows h4,
-.gameButtonsRows button {
-  width: 15rem;
-}
-
-.gameButtonsRows button {
-  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
-  margin: 1rem;
-  border-radius: 0.5rem;
-  border-color: #23213d;
-  border: 1px;
-  gap: 1rem;
-  background: #23213d;
-  font-family: Poppins;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 31px;
-  letter-spacing: 0em;
+.memoGameOptions__info h1,
+.memoGameOptions__info p {
   text-align: center;
-  color: white;
-  cursor: pointer;
 }
 
-.gameButtonsRows button:hover {
+.gameOptions__gameButtons button:hover,
+.gameOptions__gameButtons button:active,
+.gameOptions__gameButtons button.activeButton,
+.stopBottom:hover {
   background: #fe3756;
   border-color: #fe3756;
 }
-.gameButtonsRows button:active {
-  background: #fe3756;
-  border-color: #fe3756;
-}
 
-.gameButtonsRows button.activeButton {
-  background: #fe3756;
-}
-
-.timeAndScore {
-  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
-  margin: 1rem;
+.timeAndScoreMemo {
+  margin-bottom: 10px;
   border-radius: 0.5rem;
   border-color: #ebebeb;
   border: 1px;
-  gap: 1rem;
   background: #ebebeb;
   font-family: Poppins;
   font-size: 22px;
@@ -74,17 +26,16 @@
   color: rgb(0, 0, 0);
   width: 15rem;
 }
+
 .container {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.stopBottom button {
-  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
-  margin: 1rem;
+.stopBottom,
+.gameOptions__gameButtons button {
+  padding: 1.25rem 0;
+  margin-top: 1rem;
   border-radius: 0.5rem;
   border-color: #23213d;
   border: 1px;
@@ -93,16 +44,17 @@
   font-family: Poppins;
   font-size: 22px;
   font-weight: 500;
-  line-height: 31px;
   letter-spacing: 0em;
   text-align: center;
   color: white;
   width: 15rem;
   cursor: pointer;
 }
-.stopBottom button:hover {
-  background: #fe3756;
-  border-color: #fe3756;
+.stopBottom {
+  margin: 10px auto 0 auto;
+}
+.gameOptions__gameButtons__bottonsRow button {
+  width: 5rem;
 }
 .container .item {
   padding-top: 1rem;
@@ -111,8 +63,6 @@
   display: grid;
   grid-template-columns: repeat(4, 160px);
   gap: 10px;
-  max-width: 600px;
-  max-height: 250px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -121,7 +71,6 @@
   display: grid;
   background-color: #ebebeb;
   min-height: 160px;
-  min-width: 160px;
   border-radius: 8%;
   font-family: Poppins;
   font-size: 100px;
@@ -138,4 +87,54 @@
   font-size: 100px;
   place-items: center;
   cursor: pointer;
+}
+.stopBottom,
+.gameOptions,
+.gameOptions__gameButtons,
+.gameOptions__gameButtons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gameOptions__gameButtons div {
+  justify-content: flex-start;
+}
+.gameOptions__gameButtons .gameOptions__gameButtons__bottonsRow {
+  display: flex;
+  flex-direction: row;
+}
+.gameOptions__gameButtons__bottonsRow button span {
+  width: auto;
+}
+.gameOptions {
+  margin-top: 20px;
+}
+.gameOptions__gameButtons
+  .gameOptions__gameButtons__bottonsRow
+  button:nth-child(2) {
+  margin: 15px 10px 0 10px;
+}
+@media (width < 900px) {
+  #squerFalse {
+    min-height: 50px;
+    min-width: 50px;
+    font-size: 30px;
+  }
+  #squerTrue {
+    min-height: 50px;
+    min-width: 50px;
+    font-size: 30px;
+  }
+  .memoGame {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .gameOptions__gameButtons .gameOptions__gameButtons__bottonsRow {
+    display: flex;
+    flex-direction: row;
+  }
 }

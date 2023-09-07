@@ -8,7 +8,7 @@
   padding-left: 1.5rem;
   padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
-  z-index: 1200;
+  z-index: 1000;
 }
 .header__header .menu {
   display: flex;

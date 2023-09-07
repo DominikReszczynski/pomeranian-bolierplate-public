@@ -8,7 +8,7 @@
   bottom: 0;
   background: var(--dark-blue);
   padding: 2em 2em 1em 2em;
-  z-index: 1000000000000;
+  z-index: 3000;
   display: flex;
   flex-flow: row wrap;
   gap: 5%;
@@ -31,30 +31,21 @@
   justify-content: right;
 }
 .button-wrapper button {
-  padding: 1em 1.5em;
   border-radius: 8px;
   text-transform: uppercase;
 }
 
-.cookies-agreement .text-wrapper {
-  margin: 1em;
-  display: flex;
-  flex: 1;
-}
 .cookies-agreement .button-wrapper {
   display: flex;
   align-items: center;
   gap: 2em;
 }
-.cookies-agreements p {
-  color: var(--white);
-}
+
 .button-wrapper .customize__button {
   background-color: var(--white);
   color: var(--primary);
-  width: Hug (164px);
-  max-height: 4rem;
-  padding: 20px 36px 20px 36px;
+  min-width: 40vw;
+  padding: 20px 36px;
   border-radius: 8px;
   font-family: 'poppins';
   cursor: pointer;
@@ -62,9 +53,8 @@
 .button-wrapper .agree__button {
   background-color: var(--primary);
   color: var(--white);
-  width: Hug (164px);
-  max-height: 4rem;
-  padding: 20px 36px 20px 36px;
+  min-width: 40vw;
+  padding: 20px 36px;
   border-radius: 8px;
   font-family: 'poppins';
   margin-right: 30px;
@@ -81,8 +71,7 @@
 }
 .text-cookie img {
   float: left;
-  padding: 20px;
-  padding-bottom: 0px;
+  padding: 20px 20px 0 20px;
   height: 130px;
   vertical-align: top;
 }
@@ -93,4 +82,24 @@
 }
 .text-cookie div h2 {
   margin-bottom: 10px;
+}
+@media (width < 400px) {
+  .text-cookie div {
+    font-size: 0.6rem;
+  }
+  .text-cookie img {
+    width: 80px;
+    height: 80px;
+    padding: 0px 10px 0 0px;
+  }
+  .text-cookie div {
+    line-height: 0.9rem;
+  }
+  .button-wrapper button {
+    font-size: 0.6rem;
+    padding: 10px 18px;
+  }
+  .button-wrapper .agree__button {
+    margin-right: 5px;
+  }
 }

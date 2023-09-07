@@ -13,11 +13,12 @@ export function AppHeader({ toggleMenuVis }) {
   return (
     <header className='header__header'>
       <button onClick={toggleMenuVis} className='menuButton'><img src={burger} alt="menu" /></button>
-      <div className='logo'>
-        <Link to="/">
+
+      <Link to="/">
+        <div className='logo'>
           <Logo />
-        </Link>
-      </div>
+        </div>
+      </Link>
       <button className='menuButton' onClick={() => setUserIsVisible(!userIsVisible)}><img src={person} alt="user menu" /></button>
 
 

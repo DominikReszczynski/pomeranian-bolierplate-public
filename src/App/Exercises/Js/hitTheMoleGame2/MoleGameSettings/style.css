@@ -1,32 +1,22 @@
 .gameOptionsButtons {
   width: 100%;
   height: 100%;
-  display: grid;
-  /* grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr); */
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  grid-template-rows: auto 3fr;
-  grid-template-columns: 2fr 4fr;
-}
-
-.gameButtonsRows {
-  grid-area: 1 / 1 / 5 / 5;
-}
-
-.gameButtonsRows div {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+
   align-items: center;
 }
 
-.gameButtonsRows h4,
-.gameButtonsRows button {
-  width: 15rem;
+.moleGameOptions__gameTime h4,
+.moleGameOptions__moleCount h4,
+.moleGameOptions__startButton h4 {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.gameButtonsRows button {
+.moleGameOptions__gameTime button,
+.moleGameOptions__moleCount button,
+.gameOptionsButtons__controlButton {
   padding: 1.25rem 2.2rem 1.25rem 2.2rem;
   margin: 1rem;
   border-radius: 0.5rem;
@@ -34,7 +24,7 @@
   border: 1px;
   gap: 1rem;
   background: #23213d;
-
+  min-width: 130px;
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
@@ -44,8 +34,28 @@
   color: white;
 }
 
-.gameButtonsRows button:hover,
-.gameButtonsRows button.activeButton {
+.gameOptionsButtons__controlButton {
+  min-width: 300px;
+}
+
+.moleGameOptions__gameTime button:hover,
+.moleGameOptions__moleCount button:hover,
+.gameOptionsButtons__controlButton:hover,
+.moleGameOptions__gameTime button.activeButton,
+.moleGameOptions__moleCount button.activeButton {
   background: #fe3756;
   border-color: #fe3756;
+}
+@media (width < 600px) {
+  .moleGameOptions__gameTime button,
+  .moleGameOptions__moleCount button,
+  .gameOptionsButtons__controlButton {
+    margin: 0.5rem;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 0.9rem;
+    min-width: 80px;
+  }
+  .gameOptionsButtons__controlButton {
+    min-width: 300px;
+  }
 }

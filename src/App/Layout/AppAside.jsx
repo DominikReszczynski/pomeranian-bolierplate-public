@@ -4,7 +4,6 @@ import './styles/aside.css';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
-import blogIcon from '../Images/blogIcon.svg';
 import techstackIcon from '../Images/codeIcon.svg';
 import faqIcon from '../Images/faq.svg';
 import hitthemoleIcon from '../Images/HitTheMoleIcon.svg';
@@ -48,12 +47,6 @@ export function AppAside({ menuIsVisible }) {
                 <b>Certyfikaty</b>
               </NavLink>
             </li>
-            {/* <li className="aside-row">
-              <NavLink className='asied_row__link__conteiner' to="blocks">
-                <ElementIcon className="icon" />
-                <b>Bloki</b>
-              </NavLink>
-            </li> */}
 
             <li className="aside-row">
               <NavLink className="asied_row__link__conteiner" to="exercises">
@@ -87,14 +80,6 @@ export function AppAside({ menuIsVisible }) {
               <NavLink className="asied_row__link__conteiner" to="memo">
                 <img src={memoIcon} className="icon" alt='' />
                 <b>Gra | Memo</b>
-              </NavLink>
-            </li>
-
-
-            <li className="aside-row">
-              <NavLink className="asied_row__link__conteiner" to="Blog">
-                <img src={blogIcon} alt="blogIcon" className="icon" />
-                <b>Blog</b>
               </NavLink>
             </li>
 

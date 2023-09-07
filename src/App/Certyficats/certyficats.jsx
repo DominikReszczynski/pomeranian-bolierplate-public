@@ -58,8 +58,8 @@ export const Certficats = () => {
 
     ]
     return (
-        <div>
-            <h1>Moje certyfikaty</h1>
+        <div className='main-ceryficat'>
+            <h1 className='main-ceryficat__title'>Moje certyfikaty</h1>
             <div className='center-container'>
                 <div className='slider'>
                     <Slider {...settings}>

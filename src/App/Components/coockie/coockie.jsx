@@ -35,13 +35,13 @@ const Cookies = ({ agree, setAgree, setAgreeForBackground }) => {
           </div>
           <div className="button-wrapper">
             <button className="agree__button" onClick={() => { handleAgreement() }}>
-              ⭐w porządku⭐
+              ⭐zgoda⭐
             </button>
             <button
               className="customize__button"
               onClick={handleAgreementCustomization}
             >
-              Dopasuj zgody
+              Dopasuj
             </button>
           </div>
         </div>

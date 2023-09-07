@@ -6,7 +6,7 @@ export const CV = () => {
     <>
       <div className='headerCvConteiner'>
         <h1>Dominik Reszczyński</h1>
-        <h2>Junior Frontend Developer <br /> Experienced Manager</h2>
+        <h4>Junior Frontend Developer <br /> Experienced Manager</h4>
       </div>
       <div className='mainCv'>
 

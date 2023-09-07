@@ -133,11 +133,7 @@ export const TechStack = () => {
   ]);
   return (
     <>
-      <h2 className="todo-container__title">
-        <Link to="/dashboard">⯇ Tech Stack</Link>
-      </h2>
-
-      <h3>
+      <h3 className='techStack-text'>
         Poniżej znajdziesz tech stack oraz nadzędzia, jakich nauczylem się od
         początku mojej nauki.
       </h3>

@@ -5,7 +5,7 @@ export const TechStackBlock = ({ image, text }) => {
     <>
       <div className="TechStackBlock">
         <div className="TechStackBlock__image">{image}</div>
-        <h3>{text}</h3>
+        <h3 className="TechStackBlock__text">{text}</h3>
       </div>
     </>
   );
