@@ -103,6 +103,7 @@ export const CV = () => {
               <h2>Coures and certificates</h2>
               <div>
                 <p>
+                  <strong>09/2023</strong> SQL course from scratch | MySQL <br />
                   <strong>08/2023</strong> CSS3 Course Level II: essential properties and techniques <br />
                   <strong>08/2023</strong> How to create a CMS in JavaScript<br />
                   <strong>08/2023</strong> JavaScript - The Only Course You Need!<br />
