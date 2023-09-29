@@ -76,6 +76,7 @@ export const Certficats = () => {
                         })}
                     </Slider>
                 </div>
+                <iframe src="https://m365rit.sharepoint.com/sites/PomeranianSTART.IT/_layouts/15/embed.aspx?UniqueId=4fa42d28-0da6-433a-bcea-bcaf6ca79c54" width="320" height="180" frameborder="0" scrolling="no" allowfullscreen title="Dominik Reszczyński_certyfikat_EN.pdf"></iframe>
             </div>
         </div>
     );
