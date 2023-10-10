@@ -11,8 +11,12 @@ import css2Cert from './certyficatsImg/(ENG)_UC-4cfc31cf-27f3-432d-8979-6b7d3d7b
 import css3Cert from './certyficatsImg/(ENG)UC-24f75423-219e-4a71-8ab0-7bdbccb74ede (1).jpg';
 import cmsCert from './certyficatsImg/cms.jpg';
 import bashCert from './certyficatsImg/(ENG)_UC-41958d0b-9417-417a-a5be-b5eccd7bfa56.jpg';
-import javaCours from './certyficatsImg/(ENG)UC-dfbd8276-e02c-4c56-9b64-7cb0c4a672ef.jpg'
-import SQLCours from './certyficatsImg/UC-a316ca59-a179-44df-92ba-e7c6a29dbf96(ENG).jpg'
+import javaCert from './certyficatsImg/(ENG)UC-dfbd8276-e02c-4c56-9b64-7cb0c4a672ef.jpg';
+import sqlCert from './certyficatsImg/UC-a316ca59-a179-44df-92ba-e7c6a29dbf96(ENG).jpg';
+import pomeranianVol1Cert from './certyficatsImg/Dominik Reszczyński_certyfikat_EN_page-0001.jpg';
+import pomeranianVol2Cert from './certyficatsImg/Dominik Reszczyński_certyfikat_EN_page-0002.jpg';
+import wordPressCert from './certyficatsImg/mpdf_page-0001.jpg';
+import phpCert from './certyficatsImg/(ENG)UC-78379797-7844-4cd8-899d-1e13e8129b5d (1).jpg' 
 
 export const Certficats = () => {
     const settings = {
@@ -54,13 +58,28 @@ export const Certficats = () => {
         },
         {
             name: 'Java from Basics to Expert - create your own applications',
-            image: javaCours
+            image: javaCert
         },
         {
             name: 'SQL course from scratch | MySQL',
-            image: SQLCours
-        }
-
+            image: sqlCert
+        },
+        {
+            name: 'Pomeranian Junior Front-end Developer side 1',
+            image: pomeranianVol1Cert
+        },
+        {
+            name: 'Pomeranian Junior Front-end Developer side 2',
+            image: pomeranianVol2Cert
+        },
+        {
+            name: 'PHP: Learn to program and build a ChatBot from scratch',
+            image: phpCert
+        },
+        {
+            name: 'WordPress course - creating a website from scratch',
+            image: wordPressCert
+        },
     ]
     return (
         <div className='main-ceryficat'>
@@ -76,7 +95,6 @@ export const Certficats = () => {
                         })}
                     </Slider>
                 </div>
-                <iframe src="https://m365rit.sharepoint.com/sites/PomeranianSTART.IT/_layouts/15/embed.aspx?UniqueId=4fa42d28-0da6-433a-bcea-bcaf6ca79c54" width="320" height="180" frameborder="0" scrolling="no" allowfullscreen title="Dominik Reszczyński_certyfikat_EN.pdf"></iframe>
             </div>
         </div>
     );

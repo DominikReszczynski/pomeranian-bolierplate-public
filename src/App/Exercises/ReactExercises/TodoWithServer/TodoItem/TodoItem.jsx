@@ -6,7 +6,6 @@ import axios from 'axios';
 import { useState } from 'react';
 import { MarkDoneIcone } from './MarkDoneIcon/MarkDoneIcon.jsx';
 import { EditIcon } from './EditIcon/EditIcon.jsx';
-import { Tooltip } from 'react-tooltip'
 
 export function TodoItem({
   todo,

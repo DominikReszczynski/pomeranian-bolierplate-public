@@ -9,10 +9,10 @@ export function ExercisePrototipe() {
   }
 
   // Adding custom methods to the prototype of the Object
-  Object.prototype.getMake = function () {
+  Object.getMake = function () {
     return this.make;
   };
-  Object.prototype.getModel = function () {
+  Object.getModel = function () {
     return this.model;
   };
 
@@ -21,7 +21,7 @@ export function ExercisePrototipe() {
   const myCarTwo = new Car('Fiat', '50');
 
   // Adding a custom method to the prototype of the Array
-  Array.prototype.newArrayMethod = function () {
+  Array.newArrayMethod = function () {
     console.log('yes, I.m a New glopbal array method');
   };
 

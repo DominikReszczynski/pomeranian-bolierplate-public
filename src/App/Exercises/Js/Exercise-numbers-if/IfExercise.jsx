@@ -1,11 +1,10 @@
 import React from 'react';
 
 export function IfExercise() {
-  let age = 18;
-  let hasDriverLicense = true;
-  let hasCar = true;
+  // let age = 18;
+  // let hasDriverLicense = true;
+  // let hasCar = true;
   let string = 'abcdef';
-  function canDrive(age, licene, car) {}
   function longStr(string) {
     let length = string.length;
     if (length >= 10) {

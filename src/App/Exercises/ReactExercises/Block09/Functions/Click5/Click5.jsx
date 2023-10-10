@@ -10,10 +10,10 @@ export const Click5 = () => {
     setClick(currentClick + 1);
     console.log(click);
 
-    if (click % 5 === 0 && click != 0) {
+    if (click % 5 === 0 && click !== 0) {
       console.log('gratulacje');
       setMessage('Gratulacje');
-    } else if (click % 5 != 0) {
+    } else if (click % 5 !== 0) {
       setMessage('mało mi');
     }
   }

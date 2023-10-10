@@ -32,7 +32,7 @@ export function ThisKeyword() {
   //bind() function example call:
   const arrowFunctionThis = person.arrowJSFunction;
   const callaArrowFunction = arrowFunctionThis.bind(person); // Bind() nie pomorze na contekst this w przypadku arrowFunction
-
+  console.log(callaArrowFunction)
   // Przykład 4 - Wywolanie w kontekśćie klasy
   class Car {
     constructor(make) {

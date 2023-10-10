@@ -1,4 +1,4 @@
-import { ExercisePrototipe, SubRouteExample } from './ExercisePrototipe';
+import { ExercisePrototipe } from './ExercisePrototipe';
 
 export const ExercisePrototipeMetaData = {
   path: 'exercise-prototipe',

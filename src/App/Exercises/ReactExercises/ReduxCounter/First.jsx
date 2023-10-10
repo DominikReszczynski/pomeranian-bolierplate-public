@@ -1,7 +1,7 @@
-import React, { Profiler } from "react";
+import React from "react";
 import './style.css';
 import { useDispatch, useSelector } from "react-redux";
-import { increment, incrementBy } from "../../../Store/counterSlice";
+import { incrementBy } from "../../../Store/counterSlice";
 
 
 export const First = () => {

@@ -1,4 +1,4 @@
-import { ExerciseNumbersIf, SubRouteExample } from './Exercise-numbers-if';
+import { ExerciseNumbersIf } from './Exercise-numbers-if';
 
 export const ExerciseNumbersIfMetaData = {
   path: 'exercise-numbers-if',

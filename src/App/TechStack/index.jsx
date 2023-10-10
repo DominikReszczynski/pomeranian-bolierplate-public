@@ -18,7 +18,6 @@ import netbeansIcon from './TechStackIcon/NetbeansIcon.svg';
 import pycharmIcon from './TechStackIcon/PyCharmIcon.svg';
 import msteamsIcon from './TechStackIcon/MsTeamsIcon.svg';
 import { TechStackBlock } from './TechStackBlock/TechStackBlock';
-import { Link } from 'react-router-dom';
 import jestIcon from './TechStackIcon/JestIcon.svg';
 import firebaseIcon from './TechStackIcon/FirebaseIcon.svg';
 import reduxIcon from './TechStackIcon/ReduxIcon.svg';

@@ -1,7 +1,4 @@
-import {
-  PromiseMethodsTraining,
-  SubRouteExample,
-} from './PromiseMethodsTraining';
+import { PromiseMethodsTraining } from './PromiseMethodsTraining';
 
 export const PromiseMethodsTrainingMetaData = {
   path: 'promise-methods-training',

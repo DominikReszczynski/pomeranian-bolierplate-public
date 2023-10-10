@@ -17,7 +17,7 @@ export const CV = () => {
             <div className='mainCvConteiner__section__block'>
               <h2>Tech stack</h2>
               <div>
-                <p><strong>Dev:</strong> HTML5, CSS3, XML, JavaScript, Jest, React.js, React Redux, TypeScript, SDLC, REST API, JSON, WSL, Node, Python, Java, Bash, Prettier, ESLint, Husky, Visual Studio Code, Git/GitHub</p>
+                <p><strong>Dev:</strong> HTML5, CSS3, XML, JavaScript, Jest, React.js, React Redux, TypeScript, PHP, SDLC, REST API, JSON, WSL, Node, Python, Java, Bash, Prettier, ESLint, Husky, Visual Studio Code, Git/GitHub</p>
                 <p><strong>DB:</strong> Firebase, SQL queries, </p>
                 <p><strong>OS:</strong> MS Windows, Linux</p>
                 <p><strong>Other:</strong> MS Office, M365, JIRA, Confluence, Redmine, PyCharm, IntelliJ IDEA, NetBeans</p>
@@ -53,6 +53,19 @@ export const CV = () => {
             <div className='mainCvConteiner__section__block'>
               <h2>Personal experience</h2>
               <div>
+                <p><strong>09/2020 – 09/2021  | FrontEnd Developer Intern | Nerdbord</strong></p>
+                <p>During my three-month internship as a Frontend Developer at Nerdbord Company, I had the opportunity to develop skills and gain experience. Key elements include:</p>
+                <ul>
+                  <li>Scrum Methodology: Working with Scrum allowed for effective project management.</li>
+                  <li>TypeScript: Developing applications in TypeScript ensured secure code.</li>
+                  <li>React: Implementation of the user interface using React technology.</li>
+                  <li>HTML and CSS: Daily work on the interface using HTML and CSS.</li>
+                  <li>Daily Meetings: Participation in daily project progress briefings.</li>
+                  <li>Retrospectives: Sprint analyses for process improvement.</li>
+                  <li>Git and GitHub: Utilizing Git and GitHub for code management.</li>
+                  <li>Code Reviews: Regular code reviews for quality enhancement.</li>
+                </ul>
+                <br />
                 <p><strong>05/2023 – 08/2023 | Junior Frontend Developer | Pomeranian START.IT </strong></p>
                 <p><strong>Course website: <a href="https://pomeranianstartit.pl/">Pomeranian Start It</a></strong></p>
                 <p>Certificate of Completion issued by Rockin’iT </p>
@@ -103,6 +116,9 @@ export const CV = () => {
               <h2>Coures and certificates</h2>
               <div>
                 <p>
+                  <strong>10/2023</strong> PHP: Learn to program and build a ChatBot from scratch <br />
+                  <strong>10/2023</strong> WordPress course - creating a website from scratch <br />
+                  <strong>09/2023</strong> Pomeranian Junior Front-end Developer <br />
                   <strong>09/2023</strong> SQL course from scratch | MySQL <br />
                   <strong>08/2023</strong> CSS3 Course Level II: essential properties and techniques <br />
                   <strong>08/2023</strong> How to create a CMS in JavaScript<br />

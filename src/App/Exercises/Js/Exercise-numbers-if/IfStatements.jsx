@@ -24,8 +24,10 @@ export function IfStatements() {
   switch (exp) {
     case 'Red':
       console.log('Kolor jest czerwony');
+      break;
     case 'Blue':
       console.log('Kolor jest niebieski');
+      break;
     case 'Green':
       console.log('Kolor jest zielony');
       break;
@@ -34,10 +36,6 @@ export function IfStatements() {
   }
   // conditional (ternary) operator
   const conditionalIf =
-    a > 10
-      ? console.log('Większe od 10')
-      : console.log('Mniejsze lub równe 10');
-  const extraConditionalIf =
     a > 10
       ? console.log('Większe od 10')
       : console.log('Mniejsze lub równe 10');
@@ -51,6 +49,7 @@ export function IfStatements() {
   // const result2 = !iAmMen && console.log('Youre a women');
   const result1 = iAmMen && 'Youre man';
   const result2 = !iAmMen && 'Youre women';
+  console.log(conditionalIf)
   return (
     <div>
       {result1 === 'Youre man' && <div>Jesteś mężczyzną</div>}

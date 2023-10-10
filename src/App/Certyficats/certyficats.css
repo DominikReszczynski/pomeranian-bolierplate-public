@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center; /* Wyśrodkuj poziomo */
   align-items: center; /* Wyśrodkuj wertykalnie */
-  height: 25vh; /* Ustaw wysokość na całą dostępną wysokość ekranu */
+   /* Ustaw wysokość na całą dostępną wysokość ekranu */
 }
 
 .slider {

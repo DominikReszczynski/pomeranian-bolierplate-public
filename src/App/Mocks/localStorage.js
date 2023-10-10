@@ -1,7 +1,7 @@
 import { testData } from './testData';
-const baseURL = 'http://localhost:3333';
-const basePath = `${baseURL}/api/todo`;
-const DELAY = 0;
+// const baseURL = 'http://localhost:3333';
+// const basePath = `${baseURL}/api/todo`;
+// const DELAY = 0;
 
 const localStorageName = 'todo-api';
 

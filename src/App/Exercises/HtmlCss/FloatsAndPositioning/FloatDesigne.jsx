@@ -1,7 +1,5 @@
-import sky from './sky.png';
 import snowwolf from '../../../Images/snow-wolf.png';
 import './style.css';
-import { Link } from 'react-router-dom';
 export function FloatDesigne() {
   return (
     <>

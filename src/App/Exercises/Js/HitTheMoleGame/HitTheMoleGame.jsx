@@ -86,9 +86,9 @@ export function HitTheMoleGame() {
     }
   }, [highScore, score]);
 
-  const scrollToTarget = () => {
-    return scrollToBoard?.current.scrollIntoView({ behavior: 'smooth' });
-  };
+  // const scrollToTarget = () => {
+  //   return scrollToBoard?.current.scrollIntoView({ behavior: 'smooth' });
+  // };
   // useEffect(() => {
   //   return scrollToTarget();
   // }, [isCountingDown]);

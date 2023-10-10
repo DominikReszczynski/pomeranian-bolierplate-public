@@ -1,9 +1,5 @@
-import { Link } from 'react-router-dom';
-
 import { blockRouterMetaData } from './view-router-data';
-
 import '../listOfExercise.css'
-
 import fileIcon from '../../Images/file-textIcon.svg'
 
 export const ExerciseLinks = () => {

@@ -41,7 +41,10 @@ export function CatApi() {
         <h4 className='MeowPodName'><span><img src={cat} alt="" /></span>MeowPod</h4>
 
         <img src={BASE_CAT_API + fetchData} alt="cat" className='catConteiner__img' />
-        <button onClick={() => (handleFetchData(), playSoundMeow())} className='catConteiner__btn'>
+        <button onClick={() => {
+          handleFetchData();
+          playSoundMeow();
+        }} className='catConteiner__btn'>
           <img src={paw} alt="" />
           <audio ref={audioRef} >
             <source src={meowSound} type="audio/mpeg" />

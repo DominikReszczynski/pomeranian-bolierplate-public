@@ -4,7 +4,7 @@ import axios from 'axios';
 export function ApiPromises() {
   const [getPokemons, setPokemons] = useState([]);
   const [getIsLoading, setIsLoading] = useState(true);
-  const [getError, setError] = useState(null);
+  const [setError] = useState(null);
   const BASE_POKEMON_API_URL = 'https://pokeapi.co/api/v2/pokemon?limit=1015';
 
   const getTypeOfPokemon = (typeOfPokemon = []) => typeOfPokemon[0].type.name;

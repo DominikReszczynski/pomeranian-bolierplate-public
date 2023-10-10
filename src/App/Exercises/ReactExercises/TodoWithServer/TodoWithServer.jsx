@@ -3,7 +3,6 @@ import axios from 'axios';
 import './style.css';
 import { TodoItem } from './TodoItem/TodoItem';
 import { TodoForm } from './TodoForm/TodoForm';
-import { Link } from 'react-router-dom';
 
 export const BASE_API_URL = 'http://localhost:3333/api';
 //http://localhost:3333/api-docs/  -  komendy serwer

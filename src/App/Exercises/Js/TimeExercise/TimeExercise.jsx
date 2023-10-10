@@ -7,6 +7,7 @@ function howManyMinutes(timestamp) {
 function howManySeconds(timestamp) {
   return Math.floor(timestamp / 1000);
 }
+console.log(howManySeconds)
 
 function getSecondsFromTime(timestamp) {
   return Math.floor(timestamp / 1000) % 60;

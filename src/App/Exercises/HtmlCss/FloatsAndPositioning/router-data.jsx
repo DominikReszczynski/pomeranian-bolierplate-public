@@ -1,5 +1,4 @@
 import FloatDesigne from './FloatDesigne';
-import Floats from './Floats';
 
 export const FloatsMetaData = {
   path: 'floats',

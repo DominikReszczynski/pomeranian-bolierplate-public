@@ -35,15 +35,15 @@ export function ExerciseNumbersIf() {
 
   //   a /= 1
 
-  const result1 = a > b;
+  // const result1 = a > b;
 
-  const result2 = a >= b;
+  // const result2 = a >= b;
 
-  const result3 = a < b;
+  // const result3 = a < b;
 
-  const result4 = a <= b;
+  // const result4 = a <= b;
 
-  const result5 = a === b;
+  // const result5 = a === b;
 
   // IF ------------------------------------------
 

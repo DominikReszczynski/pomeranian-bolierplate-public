@@ -49,11 +49,7 @@ export function TryCatchAndFinally() {
       <input
         type="text"
         value={userName}
-        onChange={(event) => {
-          {
-            debounceHandleAddName(event.target.value);
-          }
-        }}
+        onChange={(event) => debounceHandleAddName(event.target.value)}
       />
       <p>{userName}</p>
     </div>
