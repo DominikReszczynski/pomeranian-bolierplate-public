@@ -1,4 +1,4 @@
-![Logo](./src/App/Components/Logo/Logo.jsx)
+![Logo](./src/App/Components/Logo/logo.svg)
 
 # Showcase Pomerania
 
